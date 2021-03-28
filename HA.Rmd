@@ -1,93 +1,302 @@
 ---
-title: "Populists in Government"
+title: "Regierende Populisten und ideologische Heterogenität anhand der Beispiele Griechenland und Italien"
+subtitle: "Zusammenarbeit trotz oder Spaltung wegen politischer Differenzen?"
 author: "Florian Wisniewski"
 date: "`r Sys.Date()`"
 output:
   prettydoc::html_pretty:
-    theme: architect
+    theme: leonids
     highlight: github
     toc: TRUE
 ---
 
+```{r loading libraries, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+# libraries general
+library(tidymodels)
+library(tidyverse)
+library(rms)
+library(MASS)
+library(corrplot)
+library(lubridate)
+library(Amelia)
+library(xtable)
+library(haven)
+library(foreign)
+library(broom)
+library(psych)
+library(Hmisc)
+library(expss)
+library(rockchalk)
+library(effects)
+library(modeldata)
+library(randomForest)
+library(compare)
+library(psych)
+library(desc)
+library(PerformanceAnalytics)
+library(reshape2)
+library(d3heatmap)
+library(kableExtra)
+library(gtools)
+library(gmodels)
+library(summarytools)
+library(data.table)
+
+####################################### loading ches waves
+
+# ches 19
+ches19 <- read_dta(file = "/Users/flo/Desktop/data/ches/19/CHES2019V3.dta")
+#
+ches19_f <- ches19 %>% filter(country == 4 | country == 8)
+ches19_GRC <- ches19 %>% filter(country == 4)
+ches19_ITA <- ches19 %>% filter(country == 8)
+
+# # ches 17
+# ches17 <- read_dta(file = "/Users/flo/Desktop/data/ches/17/CHES_means_2017.dta")
+# #
+# ches17_f <- ches17 %>% filter(country == 4 | country == 8)
+
+# ches 14
+ches14 <- read_dta(file = "/Users/flo/Desktop/data/ches/14/2014_CHES_dataset_means-2.dta")
+#
+ches14_f <- ches14 %>% filter(country == 4 | country == 8)
+ches14_GRC <- ches14 %>% filter(country == 4)
+ches14_ITA <- ches14 %>% filter(country == 8)
+
+# poppa expert survey
+poppa <- read_dta(file = "/Users/flo/Desktop/data/poppa/party_means.dta")
+#
+poppa_f <- poppa %>% filter(country_id == 13 | country_id == 16)
+poppa_GRC <- poppa %>% filter(country_id == 13)
+poppa_ITA <- poppa %>% filter(country_id == 16)
+#
+poppa_SYRIZA_ANEL <- poppa_GRC[c(1, 7),]
+poppa_M5S_LN <- poppa_ITA[c(2, 4),]
+```
+
+
 # Einleitung
 
+Am 13. Februar 2021 wurde Mateo Draghi, ehemaliger Präsident der Europäischen Zentralbank, nach einer erneuten Regierungskrise zum neuen Premierminister Italiens vereidigt. Um diese Handlung genauer zu verstehen, kann bis ins Jahr 2018 und der damals stattgefundenen Wahl zurückgegangen werden. Nach dieser wurde zunächst eine von manchen Medien erste populistische Koalition Westeuropas (vgl. NBC News 2018, CBC 2018, The Economist 2018, New York Times 2018) formiert - bestehend aus der Fünf-Sterne-Bewegung (M5S), welche starke Anti-Establishment-Positionen bezieht und der rechtspopulistischen Lega Nord (Lega). Premierminister und Kopf dieses Gebildes sollte der parteilose Giuseppe Conti werden, ein Jurist ohne vorherige Erfahrung. Doch nach etwas mehr als einem Jahr zerbrach diese Koalition bereits wieder durch ein Misstrauensvotum - vorrangig, so wurde dies von den beteiligten Akteuren gedeutet (vgl. Guardian 2019), aufgrund der persönlichen Ambitionen Matteo Salvinis, Innenminister und Vorsitzender der Lega.
+Doch auch die in der Folge darauf neu eingesetzte Regierung, der wieder Conte vorstand, bestehend aus M5S und der Partito Democratico (PD), war nicht von großer Konstanz gekennzeichnet. Nachdem es bereits zu Beginn die Abspaltung der Partei Italia Vivo (IV) von der PD gab, führte sich das Motiv der Spaltung fort: letztlich zerbrach auch diese Folgeregierung im Januar/Februar 2021.
+
+Doch nicht nur in Italien kam es dazu, dass sich populistische Parteien für die Regierung eines europäischen Staates verantwortlich zeichneten. Ein prominentes Beispiel hierfür ließ sich bis vor Kurzem auch noch in Griechenland wiederfinden. Als Folge der Finanzkrise konnte sich die dem linken, populistischen Parteienspektrum angehörende Partei von Alexis Tsipras, SYRIZA, profilieren und die Regierungsverantwortung übernehmen. Als es in den beiden Wahlen von 2015 nicht für eine absolute Mehrheit reichte, wurde als Koalitionspartner - und das auf den ersten Blick sehr überraschend - die rechtspopulistische und nationalkonservativ eingestellte Partei ANEL auserkoren. Diese Koalition regierte bis zu ihrem Zerfall aufgrund ideologischer Differenzen im Jahr 2019 gemeinsam.
+
+Anhand dieser beiden Beispiele wird deutlich, dass es durchaus möglich ist, dass sich populistische Parteien nach einer Wahl in Regierungsverantwortung wiederfinden können. Doch oft kommt es bei derartigen Regierungsformen zu Schwierigkeiten, sie scheinen nicht sehr lange zu halten, gerade aufgrund dessen, da oft Koalitionen eingegangen werden müssen - und diese natürlich mit einem gewissen "tradeoff" verbunden sind, welcher der eigenen Partei im Hinblick auf nächste Wahlen durchaus zu schaden vermag. Für vorliegende Arbeit stellt sich aus diesen empirischen Beispielen und gerade diesen Überlegungen heraus die Frage: welche gemeinsamen Muster, aber auch Unterschiede lassen sich zwischen dem italienischen und dem griechischen Fall von populistischen Regierungen finden, die erklären könnten, wie die Zusammenarbeit zwischen populistischen Parteien in Regierungsverantwortung geregelt ist? Oder, anders formuliert: Was ist der *Kleber, der populistische Regierungen zusammenhält* und *welche Faktoren wirken eher spaltend*? Diese Frage ist besonders interessant, gerade wenn es um ideologisch heterogene Koalitionen geht, wie in den angesprochenen Praxisbeispielen. Dafür soll sich auch mit eben dieser Zusammenarbeit genauer auseinandergesetzt werden.
+
+Einer möglichen Antwort auf diese Frage soll sich jedoch auch empirisch genähert werden. So sollen Daten aus der Chapel Hill Expert Survey und der Populist and Political Parties Expert Survey untersucht werden, um Themenbereiche herauszuarbeiten, in denen sich die Parteipositionen der jeweiligen Koalitionspartner in Italien und Griechenland zu verschiedenen Thematiken überschnitten oder auch diametral gegenüberstanden. Anhand dieser empirischen Gegenüberstellung sollen abschließend, sofern vorhanden, Muster aufgezeigt werden, welche dieser Positionen verbindend oder auch spaltend wirken können.
 
 # Theorieteil, theoretische Annahmen
 
+Zunächst soll jedoch näher auf die theoretischen Vorüberlegungen eingeganen werden, welche für diese Arbeit grundlegend sein werden. Dabei ist zunächst wichtig, zu klären, welche Definition des Begriffes oder Konstruktes *Populismus* in dieser Arbeit verwendet werden wird.
 
-# Empirie?
+Diesbezüglich soll zunächst auf die gängige Definition von Populismus als "dünne Ideologie" hingewiesen werden, wonach der Populismus an sich keine eigenständige Ideologie ausmacht, hierfür zu unterkomplex konstruiert ist. Wodurch er vielmehr besticht, ist die gute Anschlussfähigkeit an andere Theorien und Ideologien, egal ob größer oder kleiner als er selbst, wie beispielsweise Kommunismus, Sozialismus oder auch Nationalismus (vgl. Mudde 2004, S. 544).
+Doch für vorliegende Arbeit fällt dieser Ansatz in der Frage der Klassifizierung von populistischen Parteien oder Bewegungen nicht weit genug aus. So hätte man beispielsweise eventuell Probleme, einen Populismus der Mitte, wie er von Parteien wie der M5S in Italien betrieben wird, auf einer klassischen Links-Rechts-Skala zu verorten oder einer solchen Bewegung einen ideologisch klaren "Partner" für den Populismus zur Seite zu stellen.
 
+Aus diesem Grund greift auch vorliegende Arbeit den ideellen Ansatz zur Definition und Beschreibung von Populismus auf. Hier wird dieser eher als Ausdruck eines manichäischen Weltbildes gesehen, welche zwar, ähnlich wie Mudde schon 2004 anmerkte, auf den Kampf zwischen dem Willen des Volkes einerseits gegen die korrupte Elite andererseits hinweisen. Dabei ist es jedoch weniger eine lose Ideologie, bei der manche Behauptungen zutreffen, andere wiederum nicht. Der ideelle Ansatz definiert sich nach Hawkins und Rovira-Kaltwasser in drei Teilen:
 
-# Fazit
++ das *manichäische Weltbild* und stark in schwarz und weiß denkende Moralvorstellungen, 
++ die *Erhebung "des Volkes"* zu einer homogenen und inhärent moralisch guten Instanz, 
++ die *Konstruktion einer "Elite"* als Gruppe, die nur sich selbst dient, korrupt und moralisch verwerflich ist.
 
-
-# Schlussbemerkungen
-
-
-
-
-
-
+Die Autoren weisen diesbezüglich darauf hin, dass eine Bewegung oder Partei, bzw. allgemeiner ein Untersuchungsgegenstand als populistisch im Sinne des ideellen Ansatzes bezeichnet werden kann, sofern alle drei Punkte als erfüllt erachtet werden können (vgl. Hawkins/Rovira-Kaltwasser 2019, S. 3). Die Betonung liegt hierbei also darauf dass nicht nur *entweder* ein solcher Volksgedanke *oder* eine derartige Elitendarstellung vorliegen sollten, sondern dass diese in Kombination über die manichäische Weltanschauung und Moralvorstellung vorliegen müssen.
 
 
 
+# Kontext und Vorgeschichte zu Regierungen in ITA und GRC
+
++ Wie sind die jeweiligen Regierungen ideologisch aufgebaut?
+  + Was bringt das mit sich, was ist erwartbar?
+  + Wie lief das in der Wirklichkeit?
+  
+## Griechenland 2015
+
+### Ausgangslage
+
+Zunächst in gebotener Kürze zur Analyse der Ausgangslage in Griechenland vor dem und im Jahr 2015. Griechenland wurde von der Finanzkrise in der EU wohl zweifelsohne mit am stärksten getroffen. Viele Teile der Bevölkerungen litten stark unter den durchgesetzten Sparmaßnahmen. Dies schlug sich jedoch auch in den Wahlen nieder: die bisher größten Parteien PASOK und ND erlebten in der Zeit nach der Finanzkrise bis zum Januar 2015 zahlreiche Niederlagen an der Wahlurne und büßten viel von ihrer Vormachtstellung ein. Gerade die Wahlen von 2012 verdeutlichten hier bereits einen Trend für diese Parteien und wurden als "earthquake elections" bezeichnet - also das Aufbrechen von bisheriger Stabilität bei Wahlen in einem Staat (vgl. Tsatsanis/Teperoglou 2016, S. 429). In Zahlen äußerte sich dies wie folgt: konnte PASOK 2009 noch mit 44% der Stimmen die Wahl gewinnen und ND mit 33% zweitstärkste Kraft werden, so fielen diese Werte 2012 mit 19 (ND) und 13 (PASOK) extrem in den Keller - profitieren konnte jedoch auch schon bei dieser Wahl die linkspopulistische Partei SYRIZA - sie sprang von 5% in 2009 auf 17% in 2012. Als nach diesen Wahlen sich keine stabile Koalition formen ließ, wurden Neuwahlen nötig und ND und PASOK mussten mit der neu ins Parlament gekommenen linken Partei DIMAR eine Koalition eingehen, um weiter regieren zu können. Ebenso fällt in diese Zeit das starke Aufkommen von neuen Parteien im Parteiensystem, beispielsweise DIMAR (demokratische Linke), aber auch ANEL (rechtspopulistische Partei) (vgl. Tsatsanis et al. 2014, S. 524).
+
+Diese Entwicklung hatte sich verstetigt, begünstigt durch die Finanzkrise und verbunden mit einer starken Abnahme des Vertrauens der Bevölkerung in das bestehende Parteiensystem (vgl. Verney 2014, S. 20 nach Tsatsanis et al. 2014, S. 524). Es taten sich gesellschaftlich mehrere, auch neue, Gräben auf, worauf auch Yanis Tsirbas hinwies: bezüglich des *Alters der Wählerschaft* (wobei SYRIZA unter jüngeren Wählern dominerte, ND unter den älteren), der *geographischen Herkunft* dieser (hier konnte SYRIZA die Stimmen v. a. der Stadtbevölkerung erringen, während ländliche Bereiche eher ND stimmten) und deren *sozialem Hintergrund* (mit mehr Stimmen für SYRIZA in ärmeren Bevölkerungsschichten) (vgl. Tsirbas 2016, S. 408; nach: Nikolakopoulos 2015 und Voulgaris und Nikolakopoulos 2014). Von den vielen neu ins System gekommenen Parteien zeichnete sich SYRIZA beginnend mit diesen Wahlen als neuer zentraler Spieler im griechischen Parteiensystem ab.
+
+Weiterhin wurde in der Forschung konstatiert, dass diese Entwicklung sich auch im Zuge der Europawahl von 2014 weiter etablieren konnte. Zwar wurde ebenfalls angemerkt, dass auch zu diesem Zeitpunkt noch eine große Fluktuation von Wählern zwischen den Parteien stattfand, jedoch schon merklich weniger, als noch bei den Wahlgängen in Griechenland 2012. Dennoch befand sich das System auch hiernach noch nicht in einem kompletten Equilibrium (vgl. Teperoglou et al. 2015, S. 351). Die Spannungen der "Altparteien" PASOK und ND mit SYRIZA nahmen im Verlauf bis 2015 nur noch zu: Massenentlassungen und ein starker wirtschaftlicher Abschwung, sowie zunehmende Schulden bei der Europäischen Union, verbunden mit den dort geforderten Austeritätsmaßnahmen ließen die Spannungen wachsen, welche sich dann schließlich in der Europawahl von 2014 entluden (vgl. Rori 2016, S. 1324f.). Es wurde dabei aber in der Forschung festgehalten, dass zumindest der Dualismus von PASOK und ND, welche zuvor jahrzehntelang immer wieder in Ein-Parteien-Regierungen regieren konnten, aufgebrochen sei (vgl. Teperoglou et al. 2015, S. 351f.). 
+
+### Wahljahr 2015 und Populistenwahlen
+
+Nun genauer zum Wahljahr 2015 in Griechenland, in dem es zu zwei Wahlen kam (im Januar und September des Jahres), aus denen in beiden Fällen SYRIZA als Sieger hervorgehen konnte. Regulär wäre es erst 2016 zu diesen Parlamentswahlen gekommen, jedoch wurden diese aufgrund der nicht geglückten Wahl eines ND-Ministers zum neuen Präsidenten vorgezogen. Sowohl SYRIZA als auch der spätere Koalitionspartner ANEL hatten sich geweigert, diesen gegenüber der amtierenden ND-PASOK-Regierung zu bestätigen, um ihrerseits von vorgezogenen Wahlen zu profitieren und gegen ein neues Memorandum der Troika vorzugehen. Vor dem Hintergrund der Europawahl 2014 und der stetig guten Umfrageergebnisse konnte davon ausgegangen werden, dass die linkspopulistische SYRIZA stärkste Kraft werden würde - mit 36,3% (149 von 300 Sitzen) konnte diese dann am Ende auch tatsächlich triumphieren, brauchte jedoch einen Koalitionspartner, um eine feste Mehrheit zu erreichen. Diesen fand sie in der rechtspopulistischen ANEL (2015 mit einem Ergebnis von 4,8% und 13 Sitzen) (vgl. Tsirbas 2016, S. 409).
+
+Das Regierungsprogramm, welches von SYRIZA in der Koalition verfolgt werden sollte und mit welchem die Partei sich die Unterstützung der Bevölkerung in der Januar-Wahl sichern konnte, hatte sich, wie bereits erwähnt, zum Ziel gesetzt, ein neues Memorandum der Troika (bestehend aus IWF, EZB und EU-Kommission) und damit auch  weitreichende Austeritäts- und Sparmaßnahmen, zu verhindern. Im von der ersten SYRIZA-ANEL-Koalition im Juli 2015 anberaumten Referendum über weitere EU-Hilfen empfahlen dann die beiden Regierungsparteien sowie die rechtsextreme Goldene Morgenröte der Bevölkerung, mit "Nein" zu stimmen - dagegen plädierten ND, PASOK und To Potami für die zusätzlichen Finanzhilfen. Das Ergebnis von 61% der Stimmen gegen die Finanzhilfen überraschte, jedoch entschloss sich das Kabinett Alexis Tsipras' dazu, dieses zu ignorieren, was zu einem parteiinternen Bruch führte - 43 SYRIZA-Abgeordnete entzogen der Regierung die Zustimmung zu diesen Zahlungen, was zu deren Handlungsunfähigkeit und damit zu Neuwahlen führen sollte (vgl. Markou 2017, S. 60f.).
 
 
-## A New Output Format
 
-`html_pretty` in the [**prettydoc**](https://github.com/yixuan/prettydoc/)
-package is a new output format for creating HTML documents from R Markdown files.
-`html_pretty` is more lightweight compared to `html_document`, and is more
-stylish than `html_vignette` when creating package vignettes.
 
-## New Styles
+## Italien 2018/2019
 
-`html_pretty` currently supports three page themes (`cayman`, `tactile` and
-`architect`), and two syntax highlight styles (`github` and `vignette`).
-The theme and highlight styles can be specified in the document metadata,
-for example:
+### Ausgangslage
 
-```yaml
-output:
-  prettydoc::html_pretty:
-    theme: architect
-    highlight: github
+
+### Populistenwahl von 2018 und danach
+
+
+
+# Datengrundlage
+
+Als grundlegende Daten für diese Untersuchung standen jene der Chapel Hill Expert Survey (CHES) zur Verfügung. Im Fall der Untersuchung zu Griechenland wurde hierfür auf die Daten aus dem Jahr 2014 zurückgegriffen, also im Jahr vor den beiden angesprochenen Wahlen. Für Italien wurde die aktuellste Untersuchung der CHES von 2019 verwendet.
+
+Dass zwei zeitlich verschiedene Datensätze verwendet wurden hat den Grund, da die Partei ANEL im Datensatz 2019 nicht mehr enthalten war, weil sie nach den zweiten Neuwahlen nicht genug Stimmen erhielt und daher nicht mehr Teil des griechischen Parlamentes war. Diese Unterscheidung bringt jedoch auch die Problematik mit sich, dass nicht in jedem Fall auf die exakt gleichen Variablen zu den Parteipositionen kontrolliert werden konnte.
+
+Für die Verortung der Parteien anhand des Grades von Populismus, den sie aufweisen, wurde ebenfalls auf eine andere Expertenumfrage zurückgegriffen: die Populist and Political Parties Expert Survey (POPPA). Anhand der in diesem Datensatz vorhandenen Variablen lassen sich Parteien bezüglich ihres Grades an Populismus leicht einordnen. Zudem steht der Wert für Populismus in dieser Umfrage theoretisch im Einklang mit dem ideellen Ansatz, der auch für diese Arbeit grundlegend ist.
+In dieser Umfrage wurde der Wert der Variable *populism* betrachtet. Dabei handelt es sich um eine Operationalisierung des ideellen Ansatzes, auf den auch diese Arbeit zurückgreift, anhand von fünf Variablen (ausführlicher dazu vgl. Meijers/Zaslove 2020, S. 12-14).
+
+# Näheres zu den Parteien selbst und zur Regierungszusammenarbeit: Wie läuft diese ab?
+
+<!-- + Lassen sich die beobachteten Positionen in der realen Regierungsarbeit beobachten? -->
+<!--   + Wenn Unterschiede: kommt es deswegen zu Reibungen? -->
+<!--   + Wenn Gemeinsamkeiten: wie werden hier Sachen umgesetzt? -->
+
+<!-- + Allgemeine Bewertungen zur Regierungsarbeit? -->
+<!--   + Sind hier Werte zur Zufriedenheit der Bevölkerung vorhanden? -->
+
+<!-- + War die Arbeit erfolgreich oder erfolglos? Warum? Können solche heterogenen Koalitionen funktionieren? -->
+
+<!-- ----------------------------- -->
+<!-- GRC -->
+<!-- + Wie kann man jeweils SYRIZA und ANEL charakterisieren? -->
+
+<!-- + SYRIZA = linkspopulistische Partei, die den Platz von PASOK als stärkste linke Kraft einnimmt -->
+<!--   + Erklären, warum die populistisch sind (anhand Positionen aus CHES oder auch POPPA-Umfrage) -->
+
+<!-- + ANEL = rechstpopulistische Partei, die ihre Argumentation schon aus der populistischen Ecke aufbaut (ethnische Volksabgrenzungen), aber nicht so rechtsextrem ist, wie die Goldene Morgenröte -->
+
+<!-- + Welche Motive der Zusammenarbeit gibt es? -->
+<!--   + einigendes Motiv: Krisennarrativ, Finanzkrise, Bailouts (vgl. Tsirbas 2016, S. 409) -->
+<!--   + unterschiedliche Interpretation von "wir" gg. "die" (Markou 2017, 63) -->
+<!--   + gemeinsamer Kampf gegen Memoranden und die Troika (Ebd.) -->
+
+<!-- + Woran scheitert das alles letztendlich? -->
+<!--   + Probleme sind ethnischer Natur: Mazedonien-Streitfrage -->
+
+<!-- ------------------------------ -->
+<!-- ITA -->
+<!-- +  -->
+
+Nachdem nun in beiden Fällen auf den situativen Kontext eingegangen wurde, soll nun im Folgenden der bereits in der Einleitung aufgestellten Frage nachgegangen werden: Wie ist die Zusammenarbeit dieser heterogenen Regierungskoalitionen populistischer Parteien?
+
+Dafür ist zunächst ein Blick auf die einzelnen Parteien nötig: inwiefern und auf welcher Grundlage können diese als populistisch bezeichnet werden? Außerdem werden hier die Standpunkte dieser Parteien zu bestimmten Themen anhand der Daten der CHES miteinander abgeglichen, um eventuelle Gemeinsamkeiten und Unterschiede zu entdecken und anhand dessen Rückschlüsse über das jeweilige Ende der Koalitionen ziehen zu können.
+
+## Griechenland: SYRIZA und ANEL
+
+Hierfür soll sich zunächst der Fall der griechischen Parteien SYRIZA und ANEL genauer betrachtet werden. Um deren Bewertungen auf der Populismus-Skala der POPPA-Expertenumfrage leicht überblicken zu können, wurde im Folgenden eine Graphik erstellt (Abbildung 1). Auf der Y-Achse wurde eben dieser Wert abgetragen, während auf der x-Achse zusätzlich der Wert auf einer Links-Rechts-Skala dargestellt wird, um diese in einem in der Forschung oft genutzten und bekannten Spektrum zu verorten.
+
+```{r POPPA GRC: matrix of populism values and left right spectrum of parties, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+ggplot(data = poppa_GRC, aes(x = lroverall, y = populism)) +
+  geom_point() +
+  geom_text(aes(label = party), hjust = 0.5, vjust = 1.5) +
+  geom_point(data = poppa_SYRIZA_ANEL, aes(x = lroverall, y = populism), colour = "red", size = 5) +
+  ggtitle(label = "SYRIZA und ANEL im Raum zwischen Populismus und Links-Rechts-Verortung", 
+          subtitle = "Nach POPPA 2019") +
+  xlab(label = "Links-Rechts-Verortung") + 
+  ylab(label = "Populismus (ideeller Ansatz)")
 ```
 
-## Your Familiar Tools
+Dabei ist zunächst ersichtlich, dass die Annahme, es handele sich sowohl bei SYRIZA als auch bei ANEL um populistische Parteien, als bestätigt betrachtet werden kann.
 
-Feel free to use the `knitr` infrastructure with dozens of tunable options in
-your document.
 
-```{r fig.width=6, fig.height=6, fig.align='center'}
-set.seed(123)
-n <- 1000
-x1  <- matrix(rnorm(n), ncol = 2)
-x2  <- matrix(rnorm(n, mean = 3, sd = 1.5), ncol = 2)
-x   <- rbind(x1, x2)
-head(x)
-smoothScatter(x, xlab = "x1", ylab = "x2")
+## Italien: M5S und Lega
+
+```{r}
+ggplot(data = poppa_ITA, aes(x = lroverall, y = populism)) +
+  geom_point() +
+  geom_text(aes(label = party), hjust = 0.5, vjust = 1.5) +
+  geom_point(data = poppa_M5S_LN, aes(x = lroverall, y = populism), colour = "red", size = 5) +
+  ggtitle(label = "M5S und Lega Nord im Raum zwischen Populismus und Links-Rechts-Verortung", 
+          subtitle = "Nach POPPA 2019") +
+  xlab(label = "Links-Rechts-Verortung") + 
+  ylab(label = "Populismus (ideeller Ansatz)")
 ```
 
-You can include code snippets of languages other than R, but note that
-the block header has no curly brackets around the language name.
 
-```cpp
-// [[Rcpp::export]]
-NumericVector timesTwo(NumericVector x) {
-    return x * 2;
-}
+# Fazit und Schlussbemerkungen
+
++ Zusammenfassend: Was trennt - was eint populistische Parteien an der Regierung?
+
++ Was kann noch gemacht werden in dem Bereich?
+
++ Konzept des inklusiven Populismus - gibt es "guten" Populismus?
+
+
+
+
+# Literaturverzeichnis
+
++ Aslanidis, Paris; Rovira-Kaltwasser, Cristóbal (2016): *Dealing with populists in government: The SYRIZA-ANEL coalition in Greece*, Democratization, 23:6, S. 1077-1091.
+
++ Tsatsanis, Emmanouil; Teperoglou, Eftichia (2016): *Realignment under Stress: The July 2015 Referendum and the September Parliamentary Election in Greece*, South European Society and Politics, 21:4, S. 427-450.
+
++ Pappas, Takis; Aslanidis, Paris (2015): *Greek Populism: A Political Drama in Five Acts*, in: Kriesi, Hanspeter; Pappas, Takis (Hrsg.): *European Populism in the Shadow of the Great Recession*, ECPR Press, Colchester.
+
++ Tsatsanis, Emmanouil; Freire, André; Tsirbas, Yannis (2014): *The Impact of the Economic Crisis on the Ideological Space in Portugal and Greece: A Comparison of Elites and Voters*, South European Society and Politics, 19:4, S. 519-540.
+
++ Tsirbas, Yannis (2016): *The January 2015 Parliamentary Election in Greece: Government Change, Partial Punishment and Hesitant Stabilisation*, South European Society and Politics, 21:4, S. 407-426.
+
++ Mudde, Cas (2004): *The populist zeitgeist*, Government and Opposition, 39:4, S. 541-563.
+
++ Markou, Grigoris (2017): *The Rise of Inclusionary Populism in Europe: The Case of SYRIZA*, Contemporary Southeastern Europe, 4:1, S. 54-71.
+
+# Abbildungsverzeichnis (wenn nötig)
+
+## left right positioning and populism scale: Greece
+
+
+
+
+## CHES 14 eu_position of greek parties
+```{r CHES 14: eu_position of parties in GRC, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+ggplot(data = ches14_GRC, aes(eu_position, party_name)) + 
+  geom_point() +
+  geom_text(aes(label = party_name), hjust = 0.5, vjust = -0.5) +
+  geom_point(data = ches14_SYRIZA_ANEL, aes(eu_position, party_name), colour = "red", size = 5)
 ```
 
-You can also write math expressions, e.g. $Y = X\beta + \epsilon$,
-footnotes^[A footnote here.], and tables, e.g. using `knitr::kable()`.
-
-```{r, echo=FALSE, results='asis'}
-knitr::kable(head(iris, 10))
+```{r}
+ggplot(data = ches14_SYRIZA_ANEL, aes(eu_position, party_name)) + 
+  geom_point() +
+  geom_text(aes(label = party_name), hjust = 0.5, vjust = -0.5)
 ```
 
-## Stay Tuned
 
-Please visit the [development page](https://github.com/yixuan/prettydoc/) of the 
-`prettydoc` package for latest updates and news. Comments, bug reports and
-pull requests are always welcome.
+## CHES 19 eu position of italian parties
+```{r CHES 19: eu position of italian parties, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+ggplot(data = ches19_ITA, aes(eu_position, party)) + 
+  geom_point() +
+  geom_text(aes(label = party), hjust = 0.5, vjust = -0.8) +
+  geom_point(data = ches19_M5S_LN, aes(eu_position, party), colour = "red", size = 5)
+```
+
+
+
+## left right positioning and populism scale: Italy
+
+
+
+
+
+# Eigenständigkeitserklärung
+
+Ich erkläre hiermit, dass ich die Hausarbeit mit dem Titel *"Regierende Populisten und ideologische Heterogenität anhand der Beispiele Griechenland und Italien. Zusammenarbeit trotz oder Spaltung wegen politischer Differenzen?"* im Rahmen der Lehrveranstaltung "Politische Soziologie II: Soziokulturelle und ökonomische Ursachen des Populismus" unter der Leitung von Prof. Dr. Nils Steiner im Wintersemester 2020/2021 selbständig angefertigt, keine anderen Hilfsmittel als die im Quellen- und Literaturverzeichnis genannten benutzt und alle aus den Quellen und der Literatur wörtlich oder sinngemäß übernommenen Stellen als solche gekennzeichnet habe.
+
+
+
+Bamberg, den 12.04.2021
+
+
+
+Unterschrift Florian Wisniewski
+
+
+
+
+
+
+
+
+
+
