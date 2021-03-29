@@ -4,13 +4,14 @@ subtitle: "Zusammenarbeit trotz oder Spaltung wegen politischer Differenzen?"
 author: "Florian Wisniewski"
 date: "`r Sys.Date()`"
 output:
-  prettydoc::html_pretty:
-    theme: leonids
-    highlight: github
+  word_document:
     toc: TRUE
     number_sections: TRUE
-  
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
 ```{r loading libraries, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
 # libraries general
@@ -158,7 +159,7 @@ In der POPPA Expert Survey wurde außerdem Wert der Variable *populism* betracht
 
 + Manichäische/s Weltbild bzw. Moralvorstellungen (*manichean*)
 + Homogenität des Volkes (*indivisible*)
-+ Singulärer Wille des Volkes bzw. volonté générale (*general will*)
++ Volonté générale bzw. singulärer Wille des Volkes (*general will*)
 + Souveränität sollte allein beim Volk liegen (*peoplecentrism*)
 + Anti-Elitismus (*antielitism*)
 
@@ -174,7 +175,6 @@ In der POPPA Expert Survey wurde außerdem Wert der Variable *populism* betracht
 + War die Arbeit erfolgreich oder erfolglos? Warum? Können solche heterogenen Koalitionen funktionieren?
 
 -----------------------------
-GRC
 
 + Wie kann man jeweils SYRIZA und ANEL charakterisieren?
 
@@ -185,11 +185,11 @@ GRC
 
 + Welche Motive der Zusammenarbeit gibt es?
   + einigendes Motiv: Krisennarrativ, Finanzkrise, Bailouts (vgl. Tsirbas 2016, S. 409)
-  + unterschiedliche Interpretation von "wir" gg. "die" (Markou 2017, 63)
   + gemeinsamer Kampf gegen Memoranden und die Troika (Ebd.)
   
 + Woran scheitert das alles letztendlich?
   + Probleme sind ethnischer Natur: Mazedonien-Streitfrage
+  + unterschiedliche Interpretation von "wir" gg. "die" (Markou 2017, 63): ethnisch (ANEL) und rein populistisch (SYRIZA)
 
 ------------------------------
 
@@ -202,21 +202,24 @@ Hierfür soll sich zunächst der Fall der griechischen Parteien SYRIZA und ANEL 
 ```{r POPPA GRC: matrix of populism values and left right spectrum of parties, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 ggplot(data = poppa_GRC, aes(x = lroverall, y = populism)) +
   geom_point() +
-  theme_minimal() +
-  geom_text(aes(label = party), hjust = 0.5, vjust = 1.5) +
+  theme_light() +
+  geom_text(aes(label = party), hjust = 0.5, vjust = 1.8) +
   geom_point(data = poppa_SYRIZA_ANEL, aes(x = lroverall, y = populism), colour = "red", size = 5) +
-  labs(title = "SYRIZA und ANEL im Raum zwischen Populismus und Links-Rechts-Verortung", 
+  labs(title = "SYRIZA und ANEL",
+       subtitle = "Verortung der Partei bezüglich Populismus und Links-Rechts-Position",
        tag = "Abbildung 1", 
-       caption = "Nach POPPA 2019", 
+       caption = "Daten: POPPA 2019", 
        x = "Links-Rechts-Verortung", 
-       y = "Populismus (ideeller Ansatz)")
+       y = "Populismus (ideeller Ansatz)") + 
+  scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T) +
+  scale_y_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
 ```
 
 Dabei ist zunächst ersichtlich, dass die Annahme, es handele sich sowohl bei SYRIZA als auch bei ANEL um populistische Parteien, anhand der Daten aus der POPPA Expert Survey als bestätigt betrachtet werden kann: Sowohl SYRIZA (7,6) als auch ANEL (8,4) weisen bezüglich der Populismus-Skala einen hohen Wert auf. Allgemein wird auch ersichtlich: in Griechenland liegen sowohl auf der politisch linken als auch auf der politisch rechten Seite mehrere populistische Wahlalternativen vor. Die bereits im Abschnitt zur Ausgangslage in Griechenland angesprochenen Parteien ND, PASOK und To Potami, welche als pro-europäische Parteien beschrieben wurden, die anlässlich des Referendums über das dritte EU-Memorandum im Juli 2015 für "Ja" stimmen wollten, weisen allesamt niedrige Populismus-Werte auf und befinden sich im politischen Spektrum eher mittig.
 
 Weiterhin geht auch aus der Graphik hervor, dass zwischen SYRIZA und ANEL im politischen Links-Rechts-Spektrum eine gewisse Distanz vorherrscht. Somit kann diese Regierung auch empirisch mit Hilfe der POPPA-Daten durchaus als populistisch und ideologisch heterogen gesehen werden.
 
-### SYRIZA und ANEL: Was wirkte verbindend?
+## SYRIZA und ANEL: Was wirkte verbindend?
 
 -----------------------------
 
@@ -227,29 +230,59 @@ Weiterhin geht auch aus der Graphik hervor, dass zwischen SYRIZA und ANEL im pol
   
 + *EU-Position*
   + beide sind nicht gerade EU-Enthusiasten
+  + einigendes Motiv: Krisennarrativ, Finanzkrise, Bailouts (vgl. Tsirbas 2016, S. 409)
+  + gemeinsamer Kampf gegen Memoranden und die Troika (Ebd.)
 
-+ *Ökonomische Positionen?*
-  + auffällig, dass zwar links und rechts angesiedelt, aber hier doch einige Überschneidungen
+<!-- + *Ökonomische Positionen?* -->
+<!--   + auffällig, dass zwar links und rechts angesiedelt, aber hier doch einige Überschneidungen -->
+  
++ manichean, peoplecentrism, antielitism
+
++ Emotionaler Politikstil
+
 
 -----------------------------
 
-Nachdem diese grundlegende Frage zur Einordnung der SYRIZA-ANEL-Koalitionen von 2015 als ideologisch heterogene zweier populistischer Parteien geklärt wurde, soll sich nun zunächst mit der Frage nach verbindenden Faktoren auseinandergesetzt werden.
+Nachdem diese grundlegende Frage zur Einordnung der SYRIZA-ANEL-Koalitionen von 2015 als ideologisch heterogene zweier populistischer Parteien geklärt wurde, soll sich nun zunächst mit der Frage nach den  verbindenden Faktoren auseinandergesetzt werden.
+
+### Gemeinsamkeiten bei Aspekten des ideellen Ansatzes
+
+Manichäisches Weltbild, Volkssouveränität, Antielitismus
+
+### Gemeinsamkeit: emotionaler Politikstil
+
+### Gemeinsamkeit: Position zur EU
 
 
 
-```{r people centrism, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
-### people centrism
-ggplot(data = poppa_GRC, aes(x = peoplecentrism, y = party)) +
-  geom_point() +
-  theme_minimal() +
-  geom_text(aes(label = party), hjust = 0.5, vjust = 1.5) +
-  geom_point(data = poppa_SYRIZA_ANEL, aes(x = peoplecentrism, y = party), colour = "red", size = 5) +
-  labs(title = "SYRIZA und ANEL: Volk = alleiniger Souverän",
-       caption = "Nach POPPA 2019",
-       tag = "Abbildung 2",
-       x = "Volk = alleiniger Souverän",
-       y = "Partei")
-```
+## SYRIZA und ANEL: Was wirkte spaltend?
+
+-----------------------------
+
++ Klar: die *ideologische Spaltung* in rechts und links
+
++ Vor allem die Themen *Migration* und *Nativismus*
+  + Hier ist SYRIZA eher locker bzw. integrativ, während ANEL bei diesen beiden die höchsten Werte der griechischen Parteien aufweist (wenn man die rechtsextremistische XR rauslässt)
+  + Das hat auch Sprengpotential bewiesen, gerade Nativismus --> Mazedonien-Frage
+  
++ Auch: Unterschiede bei *sozialen/gesellschaftlichen Leitbildern*
+  + Lebensstil: traditionelle ANEL vs. liberale SYRIZA
+  + Autoritarismus bei ANEL vs. Liberalismus von SYRIZA, wenn es um bürgerliche Freiheiten geht
+
++ *Innerparteilicher Aufbau* ist anders (da ist fraglich, ob das wichtig ist)
+  + Parteiinterne Basisdemokratie, wie stark ist die Basis eingebunden? --> das ist bei SYRIZA logisch eher der Fall
+  + Personalisierungsgrad der Führung: bei ANEL sowieso sehr stark, bei SYRIZA auch, aber nicht in dem Umfang
+    + Generell ist dieser Punkt in Griechenland wohl sehr stark (Wertebereich fängt schon bei 5 an --> hier Diagramm umstellen, wenn beinhaltet werden soll)
+
+-----------------------------
+
+### Unterschiede bei Aspekten des ideellen Ansatzes
+
+Homogenität und Volonté Générale
+
+### Unterschiede in Parteienideologie
+
+### Andere soziale und gesellschaftliche Vorstellungen
 
 
 
@@ -260,6 +293,10 @@ ggplot(data = poppa_GRC, aes(x = peoplecentrism, y = party)) +
 + Was kann noch gemacht werden in dem Bereich?
 
 + Konzept des inklusiven Populismus - gibt es "guten" Populismus?
+
++ Sollte man schon auch nochmal für ITA machen, da da ja das gleiche Prinzip vorliegt
+  + populistische Regierung aus LEGA und M5S
+  + M5S dabei ohnehin spannender Fall, da in POPPA-Daten vllt. Populismus der Mitte?
 
 
 
@@ -285,8 +322,224 @@ ggplot(data = poppa_GRC, aes(x = peoplecentrism, y = party)) +
 + Meijers, Maurits; Zaslove, A. (2020): *Measuring Populism in Political Parties: Appraisal of a New Approach*, Comparative Political Studies, 54:2, S. 372-407.
 
 # Abbildungsverzeichnis (wenn nötig)
+## Populismus nach Definition des ideellen Ansatzes
+
+### Manichäisches Weltbild und Moralvorstellungen
+
+```{r manichean worldview, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+# manichean worldview
+ggplot(data = poppa_GRC, aes(x = manichean, y = party)) +
+  geom_point() +
+  geom_text(aes(label = party), hjust = 0.5, vjust = 1.5) +
+  geom_point(data = poppa_SYRIZA_ANEL, aes(x = manichean, y = party), colour = "red", size = 5) +
+  labs(title = "SYRIZA und ANEL",
+       subtitle = "manichean: 'Manichäische/s Weltbild bzw. Moralvorstellungen'",
+       caption = "Daten: POPPA 2019",
+       tag = "Abbildung 2",
+       x = "Manichäisches Weltbild",
+       y = "Partei") +
+  scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
+```
+
+### Homogenität des Volkes
+
+```{r indivisible, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+# indivisible people
+ggplot(data = poppa_GRC, aes(x = indivisble, y = party)) +
+  geom_point() +
+  theme_minimal() +
+  geom_text(aes(label = party), hjust = 0.5, vjust = 1.5) +
+  geom_point(data = poppa_SYRIZA_ANEL, aes(x = indivisble, y = party), colour = "red", size = 5) +
+  labs(title = "SYRIZA und ANEL",
+       subtitle = "indivisible: 'Homogenität des Volkes'",
+       caption = "Daten: POPPA 2019",
+       tag = "Abbildung 3",
+       x = "Homogenität",
+       y = "Partei") +
+  scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
+```
 
 
+
+### Volonté générale bzw. singulärer Volkswille
+
+```{r generalwill, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+# general will of the people
+ggplot(data = poppa_GRC, aes(x = generalwill, y = party)) +
+  geom_point() +
+  geom_text(aes(label = party), hjust = 0.5, vjust = 1.5) +
+  geom_point(data = poppa_SYRIZA_ANEL, aes(x = generalwill, y = party), colour = "red", size = 5) +
+  labs(title = "SYRIZA und ANEL",
+       subtitle = "generalwill: 'Volonté générale bzw. singulärer Volkswille'",
+       caption = "Daten: POPPA 2019",
+       tag = "Abbildung 4",
+       x = "Volkswille",
+       y = "Partei") +
+  scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
+```
+
+### Volkssouveränität
+
+```{r people centrism, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+# people centrism
+ggplot(data = poppa_GRC, aes(x = peoplecentrism, y = party)) +
+  geom_point() +
+  theme_minimal() +
+  geom_text(aes(label = party), hjust = 0.5, vjust = 1.5) +
+  geom_point(data = poppa_SYRIZA_ANEL, aes(x = peoplecentrism, y = party), colour = "red", size = 5) +
+  labs(title = "SYRIZA und ANEL",
+       subtitle = "peoplecentrism: 'Souveränität sollte allein beim Volk liegen'",
+       caption = "Daten: POPPA 2019",
+       tag = "Abbildung 5",
+       x = "Volk als alleiniger Souverän",
+       y = "Partei") +
+  scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
+```
+
+### (Anti-)Elitismus
+
+```{r antielitism, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+### antielitism
+ggplot(data = poppa_GRC, aes(x = antielitism, y = party)) +
+  geom_point() +
+  geom_text(aes(label = party), hjust = 0.5, vjust = 1.5) +
+  geom_point(data = poppa_SYRIZA_ANEL, aes(x = antielitism, y = party), colour = "red", size = 5) +
+  labs(title = "SYRIZA und ANEL: (Anti-)Elitismus",
+       subtitle = "antielitism: '(Anti-)Elitismus'",
+       caption = "Daten: POPPA 2019",
+       tag = "Abbildung 6",
+       x = "(Anti-)Elitismus",
+       y = "Partei") +
+  scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
+```
+
+## Politischer Stil
+
+### Emotionaler Politikstil
+
+```{r emotional, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+# emotional style
+ggplot(data = poppa_GRC, aes(x = emotional, y = party)) +
+  geom_point() +
+  theme_light() +
+  geom_text(aes(label = party), hjust = 0.5, vjust = 1.5) +
+  geom_point(data = poppa_SYRIZA_ANEL, aes(x = emotional, y = party), colour = "red", size = 5) +
+  labs(title = "SYRIZA und ANEL",
+       subtitle = "Versuch des Aktivierens von Emotionen bei Wählern",
+       caption = "Daten: POPPA 2019",
+       tag = "Abbildung XY",
+       x = "Emotionen als Strategie",
+       y = "Partei") +
+  scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
+```
+
+### Komplexität von Politik vs. Common Sense Politics
+
+```{r complex, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+# complexity of decision making in politics vs. common sense politics
+ggplot(data = poppa_GRC, aes(x = complex, y = party)) +
+  geom_point() +
+  theme_light() +
+  geom_text(aes(label = party), hjust = 0.5, vjust = 1.5) +
+  geom_point(data = poppa_SYRIZA_ANEL, aes(x = complex, y = party), colour = "red", size = 5) +
+  labs(title = "SYRIZA und ANEL",
+       subtitle = "Komplexe vs. Common Sense-Politik",
+       caption = "Daten: POPPA 2019",
+       tag = "Abbildung XY",
+       x = "Komplexität politischer Entscheidungen",
+       y = "Partei") +
+  scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
+```
+
+## Parteienideologie
+
+### Standpunkt zu Migration
+
+```{r immigration, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+### immigration
+ggplot(data = poppa_GRC, aes(x = immigration, y = party)) +
+  geom_point() +
+  theme_minimal() +
+  geom_text(aes(label = party), hjust = 0.5, vjust = 1.5) +
+  geom_point(data = poppa_SYRIZA_ANEL, aes(x = immigration, y = party), colour = "red", size = 5) +
+  labs(title = "SYRIZA und ANEL",
+       subtitle = "Position zu Migration",
+       caption = "Daten: POPPA 2019",
+       tag = "Abbildung XY",
+       x = "Position zu Migration",
+       y = "Partei") +
+  scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
+```
+
+### Nativismus
+
+```{r nativism, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+ggplot(data = poppa_GRC, aes(x = nativism, y = party)) +
+  geom_point() +
+  theme_minimal() +
+  geom_text(aes(label = party), hjust = 0.5, vjust = 1.5) +
+  geom_point(data = poppa_SYRIZA_ANEL, aes(x = nativism, y = party), colour = "red", size = 5) +
+  labs(title = "SYRIZA und ANEL",
+       subtitle = "Nativismus",
+       caption = "Daten: POPPA 2019",
+       tag = "Abbildung XY",
+       x = "Nativismus",
+       y = "Partei") +
+  scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
+```
+
+### Position zur EU
+
+```{r eu, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+ggplot(data = poppa_GRC, aes(x = eu, y = party)) +
+  geom_point() +
+  theme_minimal() +
+  geom_text(aes(label = party), hjust = 0.5, vjust = 1.5) +
+  geom_point(data = poppa_SYRIZA_ANEL, aes(x = eu, y = party), colour = "red", size = 5) +
+  labs(title = "SYRIZA und ANEL",
+       subtitle = "Position zur EU",
+       caption = "Daten: POPPA 2019",
+       tag = "Abbildung XY",
+       x = "Position zur EU",
+       y = "Partei") +
+  scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
+```
+
+## Idealisiertes Gesellschaftsbild
+
+### Bürgerliche Freiheiten vs. Recht und Ordnung
+
+```{r laworder, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+ggplot(data = poppa_GRC, aes(x = laworder, y = party)) +
+  geom_point() +
+  theme_minimal() +
+  geom_text(aes(label = party), hjust = 0.5, vjust = 1.5) +
+  geom_point(data = poppa_SYRIZA_ANEL, aes(x = laworder, y = party), colour = "red", size = 5) +
+  labs(title = "SYRIZA und ANEL",
+       subtitle = "Bürgerliche Freiheiten vs. Recht und Ordnung",
+       caption = "Daten: POPPA 2019",
+       tag = "Abbildung XY",
+       x = "Freiheiten vs. Recht und Ordnung",
+       y = "Partei") +
+  scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
+```
+
+### Idealer Lebensstil lt. Partei
+
+```{r lifestyle, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+ggplot(data = poppa_GRC, aes(x = lifestyle, y = party)) +
+  geom_point() +
+  theme_minimal() +
+  geom_text(aes(label = party), hjust = 0.5, vjust = 1.5) +
+  geom_point(data = poppa_SYRIZA_ANEL, aes(x = lifestyle, y = party), colour = "red", size = 5) +
+  labs(title = "SYRIZA und ANEL",
+       subtitle = "Idealer Lebensstil lt. Partei",
+       caption = "Daten: POPPA 2019",
+       tag = "Abbildung XY",
+       x = "Traditionell vs. liberal",
+       y = "Partei") +
+  scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
+```
 
 # Eigenständigkeitserklärung
 
@@ -299,13 +552,4 @@ Bamberg, den 12.04.2021
 
 
 Unterschrift Florian Wisniewski
-
-
-
-
-
-
-
-
-
 
