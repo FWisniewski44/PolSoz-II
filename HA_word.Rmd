@@ -115,13 +115,13 @@ Die Autoren weisen diesbezüglich darauf hin, dass eine Bewegung oder Partei, bz
 
 
 
-# Kontext und Vorgeschichte zu Regierungen in ITA und GRC
+# Kontext und Vorgeschichte zu Regierungen
 
 + Wie sind die jeweiligen Regierungen ideologisch aufgebaut?
   + Was bringt das mit sich, was ist erwartbar?
   + Wie lief das in der Wirklichkeit?
   
-# Griechenland 2015
+# Vorgeschichte SYRIZA-ANEL 2015
 
 ## Ausgangslage
 
@@ -138,6 +138,7 @@ Nun genauer zum Wahljahr 2015 in Griechenland, in dem es zu zwei Wahlen kam (im 
 Das Regierungsprogramm, welches von SYRIZA in der Koalition verfolgt werden sollte und mit welchem die Partei sich die Unterstützung der Bevölkerung in der Januar-Wahl sichern konnte, hatte sich, wie bereits erwähnt, zum Ziel gesetzt, ein neues Memorandum der Troika (bestehend aus IWF, EZB und EU-Kommission) und damit auch  weitreichende Austeritäts- und Sparmaßnahmen, zu verhindern. Im von der ersten SYRIZA-ANEL-Koalition im Juli 2015 anberaumten Referendum über weitere EU-Hilfen empfahlen dann die beiden Regierungsparteien sowie die rechtsextreme Goldene Morgenröte der Bevölkerung, mit "Nein" zu stimmen - dagegen plädierten ND, PASOK und To Potami für die zusätzlichen Finanzhilfen. Das Ergebnis von 61% der Stimmen gegen die Finanzhilfen überraschte, jedoch entschloss sich das Kabinett Alexis Tsipras' dazu, dieses zu ignorieren, was zu einem parteiinternen Bruch führte - 43 SYRIZA-Abgeordnete entzogen der Regierung die Zustimmung zu diesen Zahlungen, was zu deren Handlungsunfähigkeit und damit zu Neuwahlen führen sollte (vgl. Markou 2017, S. 60f.).
 
 ## Regierungszeit der SYRIZA-ANEL-Koalition
+
 
 
 ## Ende der Koalition: Streit um Nordmazedonien
@@ -197,7 +198,7 @@ Nachdem nun in beiden Fällen auf den situativen Kontext eingegangen wurde, soll
 
 Dafür ist zunächst ein Blick auf die einzelnen Parteien nötig: inwiefern und auf welcher Grundlage können diese als populistisch bezeichnet werden und wie lassen sie sich politisch verorten? Außerdem werden hier die Standpunkte dieser Parteien zu bestimmten Themen anhand der Daten der POPPA Expert Survey miteinander abgeglichen, um eventuelle Gemeinsamkeiten und Unterschiede zu entdecken und anhand dessen Rückschlüsse über das jeweilige Ende der Koalitionen ziehen zu können.
 
-Hierfür soll sich zunächst der Fall der griechischen Parteien SYRIZA und ANEL genauer betrachtet werden. Um deren Bewertungen auf der Populismus-Skala der POPPA-Expertenumfrage leicht überblicken zu können, wurde im Folgenden eine Graphik erstellt (Abbildung 1). Auf der Y-Achse wurde eben dieser Wert abgetragen, während auf der x-Achse zusätzlich der Wert auf einer Links-Rechts-Skala dargestellt wird, um diese in einem in der Forschung oft genutzten und bekannten Spektrum zu verorten.
+Hierfür soll zunächst der Fall der griechischen Parteien SYRIZA und ANEL genauer betrachtet werden. Um deren Bewertungen auf der Populismus-Skala der POPPA-Expertenumfrage leicht überblicken zu können, wurde im Folgenden eine Graphik erstellt (Abbildung 1). Auf der Y-Achse wurde eben dieser Wert abgetragen, während auf der x-Achse zusätzlich der Wert auf einer Links-Rechts-Skala dargestellt wird, um diese in einem in der Forschung oft genutzten und bekannten Spektrum zu verorten.
 
 ```{r POPPA GRC: matrix of populism values and left right spectrum of parties, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 ggplot(data = poppa_GRC, aes(x = lroverall, y = populism)) +
@@ -215,11 +216,12 @@ ggplot(data = poppa_GRC, aes(x = lroverall, y = populism)) +
   scale_y_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
 ```
 
-Dabei ist zunächst ersichtlich, dass die Annahme, es handele sich sowohl bei SYRIZA als auch bei ANEL um populistische Parteien, anhand der Daten aus der POPPA Expert Survey als bestätigt betrachtet werden kann: Sowohl SYRIZA (7,6) als auch ANEL (8,4) weisen bezüglich der Populismus-Skala einen hohen Wert auf. Allgemein wird auch ersichtlich: in Griechenland liegen sowohl auf der politisch linken als auch auf der politisch rechten Seite mehrere populistische Wahlalternativen vor. Die bereits im Abschnitt zur Ausgangslage in Griechenland angesprochenen Parteien ND, PASOK und To Potami, welche als pro-europäische Parteien beschrieben wurden, die anlässlich des Referendums über das dritte EU-Memorandum im Juli 2015 für "Ja" stimmen wollten, weisen allesamt niedrige Populismus-Werte auf und befinden sich im politischen Spektrum eher mittig.
+Dabei ist zunächst ersichtlich, dass die Annahme, es handele sich sowohl bei SYRIZA als auch bei ANEL um populistische Parteien, anhand der Daten aus der POPPA Expert Survey als bestätigt betrachtet werden kann: Sowohl SYRIZA (7,6) als auch ANEL (8,4) weisen bezüglich der Populismus-Skala einen hohen Wert auf. Allgemein wird auch ersichtlich: in Griechenland liegen gerade auf der politisch linken Seite mehrere populistische Wahlalternativen vor. Die bereits im Abschnitt zur Ausgangslage in Griechenland angesprochenen Parteien ND, PASOK und To Potami, welche als pro-europäische Parteien beschrieben wurden, die anlässlich des Referendums über das dritte EU-Memorandum im Juli 2015 für "Ja" stimmen wollten, weisen allesamt niedrige Populismus-Werte auf und befinden sich im politischen Spektrum eher mittig. Die Partei der Goldenen Morgenröte erachtet vorliegende Arbeit, in Übereinstimmung mit den Ausführungen von Stavrakakis et al. und Pappas und Aslanidis, nicht mehr als populistische Partei, da diese offen rechtsextreme bis neonazistische Positionen bezieht (vgl. Stavrakakis et al. 2017, S. 450; Pappas/Aslanidis 2015, S. 192). Sie weist zwar dadurch auch einen hohen Wert für Populismus in der Umfrage auf, jedoch kann diese Partei in keinem Fall mehr als demokratische Option gesehen werden.
 
 Weiterhin geht auch aus der Graphik hervor, dass zwischen SYRIZA und ANEL im politischen Links-Rechts-Spektrum eine gewisse Distanz vorherrscht. Somit kann diese Regierung auch empirisch mit Hilfe der POPPA-Daten durchaus als populistisch und ideologisch heterogen gesehen werden.
+Dies stimmt mit dem Forschungsdiskurs zu beiden Parteien als populistische überein, unabhängig davon, ob der Populismus nach ideellem Ansatz definiert wird oder nicht.
 
-## SYRIZA und ANEL: Was wirkte verbindend?
+# SYRIZA und ANEL: Analyse der Gemeinsamkeiten und Unterschiede
 
 -----------------------------
 
@@ -243,19 +245,48 @@ Weiterhin geht auch aus der Graphik hervor, dass zwischen SYRIZA und ANEL im pol
 
 -----------------------------
 
-Nachdem diese grundlegende Frage zur Einordnung der SYRIZA-ANEL-Koalitionen von 2015 als ideologisch heterogene zweier populistischer Parteien geklärt wurde, soll sich nun zunächst mit der Frage nach den  verbindenden Faktoren auseinandergesetzt werden.
+Hierbei wird folgendermaßen vorgegangen werden: es werden anhand der in der POPPA Expert Survey vorhandenen und für den vorliegenden Fall relevanten Variablen die Positionen von SYRIZA und ANEL gegenübergestellt, jedoch ebenso auch insgesamt im griechischen Parteiensystem gezeigt werden.
+Anhand der durchschnittlichen Einschätzung der Experten aus der Umfrage und ausgewählter Forschungsarbeiten soll daraufhin ein deutlicheres Bild gezeichnet werden, wo Spaltungen oder Gemeinsamkeiten bei den beiden Parteien und deren Positionen vorliegen, um die Zusammenarbeit ideologisch heterogener Koalitionen von diesem Standpunkt aus besser verstehen und beurteilen zu können.
 
-### Gemeinsamkeiten bei Aspekten des ideellen Ansatzes
+Diese Vorgehensweise wurde auch deswegen gewählt, da sie zwar datengestützt arbeitet und daher empirische Beweise für die aufgestellten Behauptungen liefert - dabei gleichzeitig aber auch die Besonderheiten der in Griechenland zur damaligen Zeit vorliegenden Situation berücksichtigt. So befand sich, wie im Absatz zur Vorgeschichte bereits angesprochen, das gesamte Parteiensystem des Landes bereits in einem Wandel, bevor die Finanzkrise zuschlug. Jedoch wurde dieser durch die Krise nur beschleunigt. Somit kann sich auch die Frage gestellt werden, ob bei einem derartigen externen Schock überhaupt gängige Methoden der Wahlforschung in der Determinierung der Wählerpositionen wirksam sind. Die bisherige Forschung weist hier zurecht auch auf die Diskrepanzen hin, die sich bei der Anwendung traditioneller Theorien in diesem Bereich, wie dem ökonomischen Wählen oder der Sortierung nach ideologischer Position ergeben (vgl. Pappas 2015, Rori 2016, S. 1331).
 
-Manichäisches Weltbild, Volkssouveränität, Antielitismus
+Nachdem also die grundlegende Frage zur Einordnung der SYRIZA-ANEL-Koalitionen von 2015 als ideologisch heterogene zweier populistischer Parteien geklärt wurde, soll sich nun zunächst mit diesem Sachverhalt auseinandergesetzt werden. Begonnen werden wird mit den Gemeinsamkeiten, danach folgen die Positionen mit stärkeren Unterschieden.
 
-### Gemeinsamkeit: emotionaler Politikstil
+## Gemeinsamkeiten und verbindende Elemente
 
-### Gemeinsamkeit: Position zur EU
+### Gemeinsamkeit I: Ähnlichkeiten bezüglich der populistischen Spielart
+
+<!-- Manichäisches Weltbild, Volkssouveränität, Antielitismus -->
+
+Bei der Beantwortung dieser Frage wurde zunächst wieder auf die Spielart des Populismus innerhalb der beiden Parteien zurückgegriffen. Wie bereits in Abbildung 1 gezeigt werden konnte, weisen beide Parteien bezüglich der Variable *populism*, die den Populismus als Konstrukt nach dem ideellen Ansatz in der POPPA Expert Survey misst, einen ähnlich hohen Wert auf. Da diese Variable in sich selbst aus, wie ebenfalls bereits angesprochen, fünf weiteren Ebenen konstruiert wurde, wurden auch diese separat graphisch nochmals überprüft, um darstellen zu können, wo genau nun die Gemeinsamkeiten und auch Unterschiede bei SYRIZA und ANEL in Bezug zu deren populistischen Auftreten liegen.
+
+Gemeinsamkeiten herrschen hier vor allem in den Bereichen des manichäischen Weltbildes bzw. Moralvorstellungen, dem Glauben an die Tatsache, das Volk sei der einzig rechtmäßige Souverän und auch bezüglich des Antielitismus vor. Damit sind drei Kernprinzipien des Populismus nach der Definition des ideellen Ansatzes für beide Parteien erfüllt - und sie liegen dabei, was diese stilistischen Merkmale des Ansatzes angeht, auch sehr nahe beieinander, wie aus den Abbildungen 2, 5 und 6 hervorgeht (vgl. Abbildungsverzeichnis).
+
+Dies ist bezüglich SYRIZA auch genau auf einer Linie mit den bisherigen Beobachtungen der Forschung. Dass die Bedeutung, welche beispielsweise "das Volk" im Parteidiskurs von SYRIZA und auch in den Reden von dessen Vorsitzenden Alexis Tsipras einnimmt, sich mit der Zeit enorm steigerte, konnte bereits nachgewiesen werden. So taucht beispielsweise das Wort "laos", griechisch für "Volk", noch 2009 kaum im Wahlkampf von Tspiras und SYRIZA auf - drei Jahre später dazu jedoch im Vergleich unheimlich oft, gar 51 Nennungen dessen konnten in einer einzigen Rede gezählt werden. Doch nicht nur die Quanität sei entscheidend in der Beurteilung dessen, auch die Qualität. Hierauf wurde insofern eingegangen, als dass auch der Inhalt von Überschriften der Parteizeitung SYRIZAs, "Avgi", analysiert wurden, welche den Eindruck jedoch bestätigen konnten. (vgl. Stavrakakis/Katsambekis 2014, S. 127f.).
+
+Ebenso sei hier noch auf die gemeinsame Arbeit und die dortige "Teilung" der Repräsentation des Volkswillens hingewiesen, die SYRIZA und ANEL in ihrer Koalitionsregierung durchführten. Für die Koalition war es in der damaligen Lage ein Balanceakt, ihren populistischen Versprechen gegenüber der inländischen Wählerschaft und den gesamteuropäischen Erwartungen gerecht zu werden. Dabei muss jedoch wieder die einzigartige Situation Griechenlands in der Finanzkrise angesprochen werden. Dass zur damaligen Zeit sowohl rechte als auch linke Demonstranten am gleichen Ort gegen das gleiche Feindbild (die EU-Austeritätspolitik und die Troika) demonstrierten, sprach Bände (vgl. Grigoriadis 2020, S. 11). Und dieses abstrakte Motiv nahm in der populistischen Koalition konkrete Formen an.
+Während SYRIZA vor allem ökonomisch und politisch eine Unterdrückung des griechischen Volkes von außen inszenieren konnte, so konnte ANEL sich eher kulturell orientieren - eine Taktik, die zumindest eine Zeit lang aufging und so beiden Parteien zugute kam, da sie so mehr Bevölkerungsgruppen repräsentieren konnten, als dies allein der Fall gewesen wäre (vgl. Aslanidis/Rovira-Kaltwasser 2016, S. 1081). Der starke Fokus auf und die Stärkung von Referenden seitens der Koalition und auf Kosten der griechischen Judikativen und Legislativen kann ebenso als Umsetzung des Volkszentrismus gesehen werden (vgl. Grigoriadis 2020, S. 12).
+
+Ebenso konnte die Forschung darüber hinaus vor allem für SYRIZA starke Tendenzen in Richtung Anti-Elitismus feststellen (vgl. Stavrakakis 2015, S. 277), womit hier auch mit Recht von einem manichäischen Weltbild im Sinne des ideellen Ansatzes die Rede sein kann.
 
 
+### Gemeinsamkeit II: emotionaler Politikstil und Zuschnitt auf Parteiführung
 
-## SYRIZA und ANEL: Was wirkte spaltend?
++ Grigoriadis 2020, S. 12 (Fußnote 18)
+
++ Stavrakakis 2015
+
+Auch bezüglich des Politikstils der beiden Parteien konnte eine gewisse Ähnlichkeit empirisch in den POPPA-Daten nachgewiesen werden. So 
+
+### Gemeinsamkeit: Position zur EU ("Eurozone without austerity"), neue Konfliktlinie I
+
++ vgl. Mudde 2016, S. 26
++ vgl. Rori 2016, S. 1331
+
+Ein weiterer Punkt, bei dem die Positionen der beiden Parteien sehr nah beieinander liegen und welcher darüber hinaus auch in der Forschung vielerorts als der *"Kleber"* der SYRIZA-ANEL-Koalition gesehen wurde, ist die Position beider Parteien in Bezug auf die EU.
+
+
+## Unterschiede und spaltende Elemente
 
 -----------------------------
 
@@ -276,19 +307,40 @@ Manichäisches Weltbild, Volkssouveränität, Antielitismus
 
 -----------------------------
 
-### Unterschiede bei Aspekten des ideellen Ansatzes
+Nachdem nun zuerst auf die Gemeinsamkeiten zwischen SYRIZA und ANEL eingegangen wurde und hier vor allem jene in Bezug auf deren Bild von Volkssouveränität und Anti-Elitismus, die starke Gemeinsamkeit bezüglich der kritischen Position gegenüber der EU und dem Euro, sowie der ähnliche politische Stil herausgestellt wurden, wird sich nun genauer mit den Unterschieden beschäftigt werden.
 
-Homogenität und Volonté Générale
+### Unterschied I: Unterschiede bei der populistischen Spielart
 
-### Unterschiede in Parteienideologie
+Zunächst erneut zum Populismus nach dem ideellen Ansatz. Nachdem diesbezüglich bereits einige verbindende Elemente herausgestellt wurden, ergab sich jedoch anhand des Blicks in die Expertenumfrage in zwei Bereichen auch ein etwas nuancierteres Bild. So ist in den Bereichen des "singulären Volkswillens bzw. volonté générale" und "Homogenität des Volkes" eine etwas größere Distanz zwischen SYRIZA und ANEL sichtbar, wie aus den Abbildungen 3 und 4 hervorgeht. Die Werte der Parteien liegen zwar noch immer einigermaßen nah beieinander, doch ist die angesprochene Distanz größer, als für das manichäische Weltbild, die Volkssouveränität und den Anti-Elitismus - in beiden Fällen weist ANEL hier höhere Werte auf als SYRIZA.
 
-### Andere soziale und gesellschaftliche Vorstellungen
+Gerade die Verteilung der Werte für die beiden thematischen Bereiche können bei der interpretatorischen Einordnung behilflich sein: so könnte vermutet werden, dass gerade im Bereich der Homogenität des Volkes im Falle von ANEL auch deswegen höhere Werte vorliegen, da die Partei eher *rechts*populistisch ist und daher auch ein anderes Bild eines Volkes zugrunde liegt - nämlich vor allem ethnisch orientiert. SYRIZA nimmt hierbei, so wurde dies auch innerhalb der Forschung zu den Parteien immer wieder konstatiert, einen inklusiveren Standpunkt ein (vgl. Stavrakakis et al. 2017, S. 450). Damit würde sich bei der Homogenitäts-Auffassung von ANEL wohl eher um deren Idealbild eines ethnisch möglichst einheitlichen Volks handeln.
+
+Insgesamt muss für diese beiden Variablen jedoch auch konstatiert werden, dass es zwar nicht vernachlässigt werden sollte, auf die etwas größere Distanz zwischen beiden Parteien an diesen Stellen hinzuweisen - jedoch kann, auch mit einem erneuten Blick in Abbildung 1 - bestätigt werden, dass es sich bei der Spielart des Populismus zwischen SYRIZA und ANEL eher um einen verbindenden Faktor, als um ein spaltendes Element handelt.
+
+### Unterschied II: Parteienideologie - Nativismus - Migration: wer oder was ist das Volk? (Neue Konfliktlinie II)
+
++ Unterstützend auch die Ergebnisse bzgl. idealisiertes Gesellschaftsbild (lifestyle und laworder)
++ Pappas u. Aslanidis 2015, S. 192ff.
++ Rori 2016, S. 1331
++ Stavrakakis, Andreadis, Katsambekis 2017, S. 451
+  + warum die goldene morgenröte keine populistische partei ist, sondern aggressiv (450)
+
+Ein weiterer Unterschied, der in der Betrachtung des Verhältnisses der beiden Parteien in jedem Fall angesprochen werden muss, ist im Bereich der Ideologie der jeweiligen Parteien angesiedelt. Beim Blick in die Graphiken zu den Themen **Migration** und **Nativismus** (Abbildungen 9 und 10) fällt auf, dass sich die beiden hier diametral gegenüberstehen: SYRIZA nimmt die liberalste Position aller Parteien im System ein, während ANEL die am wenigsten liberale besetzt (erneut unter Nichtbeachtung der Goldenen Morgenröte (XA)). Hier kommt die ideologische Distanz auf der Links-Rechts-Achse voll zum Tragen - es handelt sich um einen eindeutig spaltenden Faktor innerhalb der Koalition.
+
+Dieser Sachverhalt ist auch in der Praxis zu beobachten. So einmütig die Koalition im Politikbereich zum Thema der Europäischen Union agiert, so steht sie sich in Fragen zu Ethnie und Migration, ideologisch erwartbar, gegenüber. Beispiele hierfür finden sich bereits im Juli und Dezember 2015. Damals sollten Gesetze verabschiedet werden, welche Flüchtlingen der zweiten Generation im Land das Bürgerrecht geben und die gleichgeschlechtliche Ehe erlauben hätten sollen.
+Sowohl SYRIZA, als auch ANEL, welche ja noch immer Koalitionspartner waren, stimmten jeweils unterschiedlich, wobei SYRIZA getreu der eigenen Ideologie links-liberal und ANEL ebenso ideologisch passend rechts-traditionell stimmte. Die beiden Gesetze konnte SYRIZA auch ohne die Stimmen des Koalitionspartners, dafür mit Unterstützung der liberalen Mitte- und Mitte-Links-Parteien trotzdem durch das Parlament bringen (vgl. Stavrakakis et al. 2017, S. 451). Stavrakakis et al. weisen hier auch auf ähnliche Befunde zum parlamentarischen Abstimmverhalten populistisch linker und rechter Parteien aus den Niederlanden hin (vgl. Otjes/Louwerse 2013).
+
+Zieht man zu diesen Beobachtungen ebenso jene hinzu, welche thematisch in etwa das gesellschaftliche Idealbild der jeweiligen Parteien verkörpern (Abbildungen 12 und 13), so offenbaren sich auch hier diametral gegenüberstehende Vor- und Einstellungen. Blickt man auf die Abstimmungen über die Gesetze zurück, so lässt sich leicht eine Erklärung für die jeweiligen Parteipositionen in deren Ideologien und Selbstverständissen finden. Die Einschätzung der POPPA Expert Survey im Bereich "Idealer Lebensstil lt. Partei" bestätigt die bisherige Forschung: SYRIZA ist, wie bereits zuvor erwähnt, eher inklusiv und progressiv, während ANEL in diesen Bereichen traditionellere Positionen einnimmt, so zum Beispiel der orthodoxen Kirche nahesteht (vgl. Pappas/Aslanidis 2015, S. 451), oder aber auch homophobe Ansichten offenbart (vgl. Rori 2016, S. 1328).
+
+
 
 
 
 # Fazit und Schlussbemerkungen
 
 + Zusammenfassend: Was trennt - was eint populistische Parteien an der Regierung?
+
++ Anschließend an Stavrakakis, Andreadis, Katsambekis 2017 --> was Parteien in ihrem realen Abstimmungsverhalten im Alltag einer solchen Koalition beeinflusst, das ist nicht unbedingt deren gemeinsamer Background im Populismus - sondern ihre ideologisch-politische Verpflichtung bzw. Position
 
 + Was kann noch gemacht werden in dem Bereich?
 
@@ -298,7 +350,7 @@ Homogenität und Volonté Générale
   + populistische Regierung aus LEGA und M5S
   + M5S dabei ohnehin spannender Fall, da in POPPA-Daten vllt. Populismus der Mitte?
 
-
+Zusammenfassend lässt sich konstatieren, dass es innerhalb der sehr heterogenen Koalition der linkspopulistischen SYRIZA und der rechtspopulistischen ANEL, welche ab 2015 bis ins Jahr 2019 zusammen regieren konnte, 
 
 
 # Literaturverzeichnis
@@ -308,6 +360,10 @@ Homogenität und Volonté Générale
 + Tsatsanis, Emmanouil; Teperoglou, Eftichia (2016): *Realignment under Stress: The July 2015 Referendum and the September Parliamentary Election in Greece*, South European Society and Politics, 21:4, S. 427-450.
 
 + Pappas, Takis; Aslanidis, Paris (2015): *Greek Populism: A Political Drama in Five Acts*, in: Kriesi, Hanspeter; Pappas, Takis (Hrsg.): *European Populism in the Shadow of the Great Recession*, ECPR Press, Colchester.
+
++ Pappas, Takis (2015): *Populist Hegemony*, Open Democracy, Artikel vom 25.09., abgerufen unter: https://www.opendemocracy.net/en/can-europe-make-it/populist-hegemony-in-greece/ (Stand: 30.03.2021).
+
++ Rori, Lamprini (2016): *The 2015 Greek parliamentary elections: from great expectations to no expectations*, West European Politics, 39:6, S. 1323-1343.
 
 + Tsatsanis, Emmanouil; Freire, André; Tsirbas, Yannis (2014): *The Impact of the Economic Crisis on the Ideological Space in Portugal and Greece: A Comparison of Elites and Voters*, South European Society and Politics, 19:4, S. 519-540.
 
@@ -320,6 +376,24 @@ Homogenität und Volonté Générale
 + Meijers, Maurits; Zaslove, Andrej (2020): *"Populism and Political Parties Expert Survey 2018 (POPPA)"*, https://doi.org/10.7910/DVN/8NEL7B, Harvard Dataverse, V1.
 
 + Meijers, Maurits; Zaslove, A. (2020): *Measuring Populism in Political Parties: Appraisal of a New Approach*, Comparative Political Studies, 54:2, S. 372-407.
+
++ Stavrakakis, Yannis; Katsambekis, Giorgos (2014): *Left-wing populism in the European periphery: the case of SYRIZA*, Journal of Political Ideologies, 19:2, S. 119-142.
+
++ Stavrakakis, Yannis (2015): *Populism in Power: Syrizas Challenge to Europe*, Juncture, 21:4, S. 273-280.
+
++ Stavrakakis, Yannis; Andreadis, Ioannis; Katsambekis, Giorgos (2017): *A new populism index at work: identifying populist candidates and parties in the contemporary Greek context*, European Politics and Society, 18:4, S. 446-464.
+
++ Grigoriadis, Ioannis (2020): *For the People, against the Elites: Left versus Right-Wing Populism in Greece and Turkey*, The Journal of the Middle East and Africa, 11:1, S. 51-64.
+  + Vorliegende Version vorläufig, online abrufbar unter: https://www.researchgate.net/profile/Ioannis-Grigoriadis/publication/339912921_For_the_People_Against_the_Elites_Left_versus_Right-Wing_Populism_in_Greece_and_Turkey/links/5e6bd5c492851c6ba700958f/For-the-People-Against-the-Elites-Left-versus-Right-Wing-Populism-in-Greece-and-Turkey.pdf (Stand: 30.03.2021)
+
++ Otjes, Simon; Louwerse, Tom (2013): *Populists in Parliament: Comparing Left-Wing and Right-Wing Populism in the Netherlands*, Political Studies, 63:1 (2015), S. 60-79.
+
+
+
+
+
+
+
 
 # Abbildungsverzeichnis (wenn nötig)
 ## Populismus nach Definition des ideellen Ansatzes
@@ -427,26 +501,25 @@ ggplot(data = poppa_GRC, aes(x = emotional, y = party)) +
   labs(title = "SYRIZA und ANEL",
        subtitle = "Versuch des Aktivierens von Emotionen bei Wählern",
        caption = "Daten: POPPA 2019",
-       tag = "Abbildung XY",
+       tag = "Abbildung 7",
        x = "Emotionen als Strategie",
        y = "Partei") +
   scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
 ```
 
-### Komplexität von Politik vs. Common Sense Politics
+### Zuschnitt auf die Parteiführung
 
-```{r complex, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
-# complexity of decision making in politics vs. common sense politics
-ggplot(data = poppa_GRC, aes(x = complex, y = party)) +
+```{r}
+ggplot(data = poppa_GRC, aes(x = personalised, y = party)) +
   geom_point() +
   theme_light() +
   geom_text(aes(label = party), hjust = 0.5, vjust = 1.5) +
-  geom_point(data = poppa_SYRIZA_ANEL, aes(x = complex, y = party), colour = "red", size = 5) +
+  geom_point(data = poppa_SYRIZA_ANEL, aes(x = personalised, y = party), colour = "red", size = 5) +
   labs(title = "SYRIZA und ANEL",
-       subtitle = "Komplexe vs. Common Sense-Politik",
+       subtitle = "Zuschnitt der Politik der Partei auf die jeweilige Führung",
        caption = "Daten: POPPA 2019",
-       tag = "Abbildung XY",
-       x = "Komplexität politischer Entscheidungen",
+       tag = "Abbildung 8",
+       x = "Personalisierungsgrad",
        y = "Partei") +
   scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
 ```
@@ -465,7 +538,7 @@ ggplot(data = poppa_GRC, aes(x = immigration, y = party)) +
   labs(title = "SYRIZA und ANEL",
        subtitle = "Position zu Migration",
        caption = "Daten: POPPA 2019",
-       tag = "Abbildung XY",
+       tag = "Abbildung 9",
        x = "Position zu Migration",
        y = "Partei") +
   scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
@@ -482,7 +555,7 @@ ggplot(data = poppa_GRC, aes(x = nativism, y = party)) +
   labs(title = "SYRIZA und ANEL",
        subtitle = "Nativismus",
        caption = "Daten: POPPA 2019",
-       tag = "Abbildung XY",
+       tag = "Abbildung 10",
        x = "Nativismus",
        y = "Partei") +
   scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
@@ -499,7 +572,7 @@ ggplot(data = poppa_GRC, aes(x = eu, y = party)) +
   labs(title = "SYRIZA und ANEL",
        subtitle = "Position zur EU",
        caption = "Daten: POPPA 2019",
-       tag = "Abbildung XY",
+       tag = "Abbildung 11",
        x = "Position zur EU",
        y = "Partei") +
   scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
@@ -518,7 +591,7 @@ ggplot(data = poppa_GRC, aes(x = laworder, y = party)) +
   labs(title = "SYRIZA und ANEL",
        subtitle = "Bürgerliche Freiheiten vs. Recht und Ordnung",
        caption = "Daten: POPPA 2019",
-       tag = "Abbildung XY",
+       tag = "Abbildung 12",
        x = "Freiheiten vs. Recht und Ordnung",
        y = "Partei") +
   scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
@@ -535,7 +608,7 @@ ggplot(data = poppa_GRC, aes(x = lifestyle, y = party)) +
   labs(title = "SYRIZA und ANEL",
        subtitle = "Idealer Lebensstil lt. Partei",
        caption = "Daten: POPPA 2019",
-       tag = "Abbildung XY",
+       tag = "Abbildung 13",
        x = "Traditionell vs. liberal",
        y = "Partei") +
   scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)

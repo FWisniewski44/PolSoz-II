@@ -27,6 +27,8 @@ library(kableExtra)
 library(gtools)
 library(gmodels)
 library(summarytools)
+library(data.table)
+library(ggpubr)
 
 ################################################ load required dfs if needed
 
