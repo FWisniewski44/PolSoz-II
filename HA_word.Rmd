@@ -1,6 +1,7 @@
 ---
 title: "Regierende Populisten und ideologische Heterogenität anhand des Beispiels Griechenland"
 subtitle: "Zusammenarbeit trotz oder Spaltung wegen politischer Differenzen?"
+abstract: "Hier sollte das Abstract stehen."
 author: "Florian Wisniewski"
 date: "`r Sys.Date()`"
 output:
@@ -298,9 +299,9 @@ Ein weiterer Punkt, bei dem die Positionen der beiden Parteien sehr nah beieinan
 
 Auch von Takis Pappas wird der Umstand der Formation einer SYRIZA-ANEL-Regierung stark auf deren EU-Position zurückgeführt. Er weist dabei darauf hin, dass die beiden Parteien zwar auch große Ähnlichkeiten bezüglich der Art des von ihnen geführten politischen Diskurses abseits des vorherrschenden Links-Rechts-Schemas haben (so zum Beispiel in der Darstellung von deren Politik als Kampf gegen Unterdrückung des Volkes durch die Elite im Land (ANEL) oder der EU (SYRIZA), vgl. Pappas/Aslanidis 2015, S. 192-195). So führt er an, dass sich neue Konfliktlinien abseits dessen gebildet hätten und ein Parteiensystem wie das in Griechenland zum damaligen Zeitpunkt weniger allein in dem bekannten Schema der Links-Rechts-Einordnung beurteilt werden sollte, sondern nach der von ihm vorgeschlagenen politisch-ideologischen Verortung der Parteien. So ergäbe sich eine Aufteilung in liberale, populistische und undemokratische Parteien - jede Dimension zusätzlich mit Optionen auf der politisch linken bzw. rechten Seite. In diesem Licht bringt er auch die starke Gemeinsamkeit der damaligen Koalition bezüglich der Position gegenüber der EU zur Sprache, welche eher gemischten Gefühlen entspräche. Eine derartige Kongruenz bei dieser Position hätte sich, so Pappas, für SYRIZA mit keiner anderen Partei im damaligen griechischen Parteienspektrum finden lassen (vgl. Pappas 2015a) - was diesen Punkt auch zu einer essenziellen Gemeinsamkeit macht, welche zur Formierung und zum Funktionieren einer ideologisch eigentlich so heterogenen Koalition wie der zwischen SYRIZA und ANEL notwendig war. Weiterhin sei hier auch auf Abbildung 14 hingewiesen, welche die Argumentation von Pappas graphisch neben der vom Autor vorliegender Arbeit selbst erstellten Abbildung 13 stützt.
 
+Dieses Argument von Pappas, welches man geradezu auch mit dem Wort "Alternativlosigkeit" beschreiben könnte, wird von Cas Mudde ebenfalls aufgegriffen. Dieser beschreibt es zunächst aus einem anderen Blickwinkel: die damalige Wunschposition von SYRIZA und ANEL sei als eine Art Mittelweg zwischen Austeritätspolitik der EU und einem Schuldenschnitt bzw. faireren Konditionen für Griechenland ("Eurozone without austerity") zu sehen. Jedoch merkt er ebenso an, dass dieser Wunsch von der Troika vehement zurückgewiesen wurde (vgl. Mudde 2016, S. 16-17). Für Mudde beruht die Koalition aus SYRIZA und ANEL also gar gerade auf deren utopischer, gemeinsamer Position zum Verbleib in der Eurozone, jedoch ohne die Austeritätspolitik der EU, also deren gemeinsamer Ablehnung des Memorandums (vgl. Ebd., S. 26). 
 Argumentativ in die gleiche Kerbe schlägt auch Rori, die anführt, dass sich im Zuge der Finanzkrise die bereits angesprochenen neuen Gräben im Parteiensystem aufgetan hätten. Demnach wäre auch hier die Links-Rechts-Verortung allein nicht mehr so aussagekräftig. Diese sei zwar in kultureller Hinsicht die relevante Achse, jedoch hätte sich hier ökonomisch ein weiterer Graben aufgetan, welcher sich hauptsächlich im Hinblick auf Positionen zu Europa strukturierte und für die Akteure eine große Wichtigkeit aufwies und übernimmt hier einen Standpunkt, der bereits auch in der Forschung an anderer Stelle so für den griechischen Fall erarbeitet wurde (vgl. Katsanidou/Otjes 2015). 
-Rori argumentiert weiter, dass es sich bei der Koalition zwischen SYRIZA und ANEL also aus ihrer Sicht weniger um ein programmatisches Abkommen einer Regierung handelt, welches logischerweise ideologische Nähe bräuchte. Vielmehr sei der entscheidende Punkt bei der Zusammenarbeit, der auch das Ausblenden der sozio-kulturellen Differenzen ermöglichte, der des Widerstandes gegen das Memorandum und die Austeritätspolitik der EU gewesen (vgl. Rori 2016, S. 1331). 
-
+Rori argumentiert weiter, dass es sich bei der Koalition zwischen SYRIZA und ANEL also aus ihrer Sicht weniger um ein programmatisches Abkommen einer Regierung handelt, welches logischerweise ideologische Nähe bräuchte. Vielmehr sei der entscheidende Punkt bei der Zusammenarbeit, der auch das Ausblenden der sozio-kulturellen Differenzen ermöglichte, der des Widerstandes gegen das Memorandum und die Austeritätspolitik der EU gewesen (vgl. Rori 2016, S. 1331).
 
 ## Unterschiede und spaltende Elemente
 
@@ -356,6 +357,8 @@ Zieht man zu diesen Beobachtungen ebenso jene hinzu, welche thematisch in etwa d
 
 + Anschließend an Pappas (Feb 15, Opendemocracy): SYRIZA und ANEL waren lt. ihm gar die einzig mögliche Koalition, wegen der starken Fragmentierung des grc. Parteiensystem (vgl. seine Graphik)
 
++ Anschließend an Mudde (2016): ist SYRIZA wirklich eine moderatere/traditionellere Partei geworden?
+
 + Was kann noch gemacht werden in dem Bereich?
 
 + Konzept des inklusiven Populismus - gibt es "guten" Populismus?
@@ -364,7 +367,15 @@ Zieht man zu diesen Beobachtungen ebenso jene hinzu, welche thematisch in etwa d
   + populistische Regierung aus LEGA und M5S
   + M5S dabei ohnehin spannender Fall, da in POPPA-Daten vllt. Populismus der Mitte?
 
-Zusammenfassend lässt sich konstatieren, dass es innerhalb der sehr heterogenen Koalition der linkspopulistischen SYRIZA und der rechtspopulistischen ANEL, welche ab 2015 bis ins Jahr 2019 zusammen regieren konnte, 
+Zusammenfassend lässt sich konstatieren, dass die Koalition der linkspopulistischen SYRIZA und der rechtspopulistischen ANEL, welche ab 2015 bis ins Jahr 2019 zusammen regieren konnte, zunächst eine reine Zweckgemeinschaft war: beide Parteien hatten ihre politischen Kräfte gegen das von der EU gestellte Memorandum gebündelt.
+Als jedoch diese "Gefahr", mehr schlecht als recht, gebannt war und die Austeritätspolitik trotz einer gegensätzlichen Entscheidung im Referendum von der Regierung durchgesetzt wurde - was konnte diese Koalition dennoch zusammenhalten, wenn dieses bindende Element fehlte?
+
+Aus der Empirie ist zu entnehmen, dass die Koalition bis zu den vorgezogenen Parlamentswahlen im Juli 2019 noch funktionierte. Doch bereits im Jahr 2017 zeigte sich in den Wahlumfragen ein mehr als klarer Rückgang in der Unterstützung der Bevölkerung für SYRIZA (vgl. Ekathimerini 2017). Ebenso wurde bereits in der Zeit zwischen 2015 und 2016 klar, dass der Umstand bezüglich der Mazedonien-Frage, welcher 2019 unter anderem zur Spaltung der Koalition führte, ein rotes Tuch für die Zusammenarbeit darstellen könnte (vgl. Petsinis 2017)
+
+An dieser Stelle soll nun nochmals auf Abbildung 14 und die Implikationen für das griechische Parteiensystem verwiesen werden, die sich daraus ergeben. Neben der Überschneidung der beiden Parteien bei der EU-Position wird hier nochmals deutlich gemacht, dass es auch in der Spielart des Populismus, welcher bei beiden Parteien vorliegt, starke Überschneidungen gibt. Dies wurde auch in dieser Arbeit weiter herausgearbeitet, gerade in Bezug auf das manichäische Weltbild, die Rolle der Volkssouveränität und den Anti-Elitismus in beiden Parteien. Es sind also auch abseits der EU-Thematiken noch andere bindende Elemente vorhanden und hier wurde auch eine für Griechenland eine halbwegs stabile Zeit nach den Turbulenzen der Finanzkrise und den Folgeerscheinungen, wie den Umwälzungen im Parteiensystem, eingeläutet (vgl. Rori 2019, S. 1024).
+Jedoch wurde zu Recht von der Forschung (vgl. Stavrakakis et al. 2017) darauf hingewiesen, dass dies eine stark instabile Partnerschaft ist und dass im Zweifel eher ein Verhalten eher nach ideologisch-politischen Positionen, als nach Überschneidungen bezüglich der Spielart des Populismus zu beobachten sein würde.
+
+Dass dieses Schicksal auch die SYRIZA-ANEL-Koalition im Streit über das Prespa-Abkommen von 
 
 
 # Literaturverzeichnis
@@ -387,6 +398,8 @@ Zusammenfassend lässt sich konstatieren, dass es innerhalb der sehr heterogenen
 
 + Mudde, Cas (2004): *The populist zeitgeist*, Government and Opposition, 39:4, S. 541-563.
 
++ Mudde, Cas (2016): *SYRIZA: The Failure of the Populist Promise*, Palgrave Pivot, Cham (Schweiz).
+
 + Markou, Grigoris (2017): *The Rise of Inclusionary Populism in Europe: The Case of SYRIZA*, Contemporary Southeastern Europe, 4:1, S. 54-71.
 
 + Meijers, Maurits; Zaslove, Andrej (2020): *"Populism and Political Parties Expert Survey 2018 (POPPA)"*, https://doi.org/10.7910/DVN/8NEL7B, Harvard Dataverse, V1.
@@ -404,12 +417,15 @@ Zusammenfassend lässt sich konstatieren, dass es innerhalb der sehr heterogenen
 
 + Otjes, Simon; Louwerse, Tom (2013): *Populists in Parliament: Comparing Left-Wing and Right-Wing Populism in the Netherlands*, Political Studies, 63:1 (2015), S. 60-79.
 
-+ Zafiropoulos, Pavlos (2015): *Who is Panos Kammenos?*, Artikel via thetoc.gr vom 25.01.2015, abgerufen unter: https://www.thetoc.gr/eng/politics/article/who-is-panos-kammenos (Stand: 31.03.2021).
++ Zafiropoulos, Pavlos (2015): *Who is Panos Kammenos?*, Artikel via thetoc.gr vom 25.01., abgerufen unter: https://www.thetoc.gr/eng/politics/article/who-is-panos-kammenos (Stand: 31.03.2021).
 
-+ Kakissis, Joanna (2015): *Tsipras' strategy gives Greeks a voice*, Artikel via DW vom 09.02.2015, abgerufen unter: http://www.dw.de/tsipras-strategy-gives-greeks-a-voice/a-18244014 (Stand: 31.03.2021).
++ Kakissis, Joanna (2015): *Tsipras' strategy gives Greeks a voice*, Artikel via DW vom 09.02., abgerufen unter: http://www.dw.de/tsipras-strategy-gives-greeks-a-voice/a-18244014 (Stand: 31.03.2021).
 
++ Ekathimerini Online Artikel ohne Autor, abgerufen unter: https://www.ekathimerini.com/news/215440/poll-shows-most-greeks-gloomy-nd-far-ahead-of-syriza/
 
++ Petsinis, Vassilis (2017): *Syriza and ANEL: a match made in Greece*, Artikel via Open Democracy vom 25.01., abgerufen unter: https://www.opendemocracy.net/en/can-europe-make-it/syriza-and-anel-match-made-in-greece/ (Stand: 31.03.2021).
 
++ Rori, Lamprini: *he 2019 Greek parliamentary election: retoure à la normale*, West European Politics, 43:4, S. 1023-1037.
 
 
 
