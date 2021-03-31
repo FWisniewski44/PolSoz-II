@@ -113,7 +113,10 @@ Aus diesem Grund greift auch vorliegende Arbeit den ideellen Ansatz zur Definiti
 
 Die Autoren weisen diesbezüglich darauf hin, dass eine Bewegung oder Partei, bzw. allgemeiner ein Untersuchungsgegenstand als populistisch im Sinne des ideellen Ansatzes bezeichnet werden kann, sofern alle drei Punkte als erfüllt erachtet werden können (vgl. Hawkins/Rovira-Kaltwasser 2019, S. 3). Die Betonung liegt hierbei also darauf, dass nicht nur *entweder* ein solcher Volksgedanke *oder* eine derartige Elitendarstellung vorliegen sollten, sondern dass diese in Kombination über die manichäische Weltanschauung und Moralvorstellung vorliegen müssen.
 
+Hawkins und Rovira-Kaltwasser fügen dieser reinen Populismus-Definition ebenso noch einen größeren theoretischen Rahmenkomplex hinzu. Sie ergänzen darüber hinaus (unter Rückgriff auf zahlreiche Beispiele von Untersuchungen und anderer Literatur), dass es als erwiesen angesehen werden kann, dass es latente Einstellungen in Richtung Populismus in der Masse der Menschen weltweit gibt, besonders in Europa und in den Amerikas. Diese seien innerhalb der Bevölkerung von Staaten unterschiedlich stark vorhanden und verteilt, abhängig von anderen sozio-kulturellen Faktoren wie Alter oder Geschlecht - jedoch steht für Sie außer Frage, dass viele Menschen zumindest bis zu einem gewissen Grad auch populistischen Aussagen oder Standpunkten zustimmen würden (vgl. Hawkins/Rovira-Kaltwasser 2019, S. 6-7).
 
+Der wichtige Punkt an dieser Theorie ist jedoch auch, dass es einer *Aktivierung* dieser Einstellungen von Seiten populistischer Akteure bedarf - und diese latenten, "versteckten" Einstellungen somit in den allermeisten Fällen nicht einfach von selbst zu Tage treten. Die Autoren betonen hier erneut auf dieser Basis, warum sie deshalb Populismus und die zugehörigen Einstellungen innerhalb der Menschen nicht als Ideologie deuten möchten: durch deren Natur seien diese Standpunkte eben in vielen Menschen einfach vorhanden, da diese sich beispielsweise auch als Standpunkte zum Funktionieren von Demokratie selbst äußern können. Sie schließen somit auch eine gewisse Positivität von Populismus nicht kategorisch aus. Daraus ergibt sich für Hawkins und Rovira-Kaltwasser der Kontext, in dem populistische Akteure von diesen latenten Einstellungen profitieren können: wenn die Menschen ein Defizit an Repräsentation von Seiten der Politiker wahrnehmen.
+Essenziell ist nun das Framing dieser Einstellungen *in* diesem Kontext von Seiten politisch populistischer Akteure. Diese Akteure können dies laut den Autoren vor allem auf drei Wegen erreichen: durch Zuschreibung von Schuld (hier vor allem auch anti-elitistisch auf die aktuelle Regierung, welche das wahrgenommene Repräsentationsdefizit auslöste), durch die Konstruktion von In- und Out-Groups und/oder durch einen stark emotionalisierten Politikstil (vgl. Hawkins/Rovira-Kaltwasser, S. 7-8).
 
 # Kontext und Vorgeschichte zu Regierungen
 
@@ -262,7 +265,7 @@ Bei der Beantwortung dieser Frage wurde zunächst wieder auf die Spielart des Po
 
 Gemeinsamkeiten herrschen hier vor allem in den Bereichen des manichäischen Weltbildes bzw. Moralvorstellungen, dem Glauben an die Tatsache, das Volk sei der einzig rechtmäßige Souverän und auch bezüglich des Antielitismus vor. Damit sind drei Kernprinzipien des Populismus nach der Definition des ideellen Ansatzes für beide Parteien erfüllt - und sie liegen dabei, was diese stilistischen Merkmale des Ansatzes angeht, auch sehr nahe beieinander, wie aus den Abbildungen 2, 5 und 6 hervorgeht (vgl. Abbildungsverzeichnis).
 
-Dies ist bezüglich SYRIZA auch genau auf einer Linie mit den bisherigen Beobachtungen der Forschung. Dass die Bedeutung, welche beispielsweise "das Volk" im Parteidiskurs von SYRIZA und auch in den Reden von dessen Vorsitzenden Alexis Tsipras einnimmt, sich mit der Zeit enorm steigerte, konnte bereits nachgewiesen werden. So taucht beispielsweise das Wort "laos", griechisch für "Volk", noch 2009 kaum im Wahlkampf von Tspiras und SYRIZA auf - drei Jahre später dazu jedoch im Vergleich unheimlich oft, gar 51 Nennungen dessen konnten in einer einzigen Rede gezählt werden. Doch nicht nur die Quanität sei entscheidend in der Beurteilung dessen, auch die Qualität. Hierauf wurde insofern eingegangen, als dass auch der Inhalt von Überschriften der Parteizeitung SYRIZAs, "Avgi", analysiert wurden, welche den Eindruck jedoch bestätigen konnten. (vgl. Stavrakakis/Katsambekis 2014, S. 127f.).
+Dies ist bezüglich SYRIZA auch genau auf einer Linie mit den bisherigen Beobachtungen der Forschung. Dass die Bedeutung, welche beispielsweise "das Volk" im Parteidiskurs von SYRIZA und auch in den Reden von dessen Vorsitzenden Alexis Tsipras einnimmt, sich mit der Zeit enorm steigerte, konnte bereits nachgewiesen werden. So taucht beispielsweise das Wort "laos", griechisch für "Volk", noch 2009 kaum im Wahlkampf von Tspiras und SYRIZA auf - drei Jahre später dazu jedoch im Vergleich unheimlich oft, gar 51 Nennungen dessen konnten in einer einzigen Rede gezählt werden. Doch nicht nur die Quanität sei entscheidend in der Beurteilung dessen, auch die Qualität. Hierauf wurde insofern eingegangen, als dass auch der Inhalt von Überschriften der Parteizeitung SYRIZAs, "Avgi", analysiert wurden, welche den Eindruck jedoch bestätigen konnten. (vgl. Stavrakakis/Katsambekis 2014, S. 127f.). Auch in der offiziellen Wahlkampagne SYRIZAs von 2012 kamen solche Motive der Vereinnahmung des Volkes für die Partei immer wieder vor (vgl. Pappas/Aslanidis 2015, S. 195).
 
 Ebenso sei hier noch auf die gemeinsame Arbeit und die dortige "Teilung" der Repräsentation des Volkswillens hingewiesen, die SYRIZA und ANEL in ihrer Koalitionsregierung durchführten. Für die Koalition war es in der damaligen Lage ein Balanceakt, ihren populistischen Versprechen gegenüber der inländischen Wählerschaft und den gesamteuropäischen Erwartungen gerecht zu werden. Dabei muss jedoch wieder die einzigartige Situation Griechenlands in der Finanzkrise angesprochen werden. Dass zur damaligen Zeit sowohl rechte als auch linke Demonstranten am gleichen Ort gegen das gleiche Feindbild (die EU-Austeritätspolitik und die Troika) demonstrierten, sprach Bände (vgl. Grigoriadis 2020, S. 11). Und dieses abstrakte Motiv nahm in der populistischen Koalition konkrete Formen an.
 Während SYRIZA vor allem ökonomisch und politisch eine Unterdrückung des griechischen Volkes von außen inszenieren konnte, so konnte ANEL sich eher kulturell orientieren - eine Taktik, die zumindest eine Zeit lang aufging und so beiden Parteien zugute kam, da sie so mehr Bevölkerungsgruppen repräsentieren konnten, als dies allein der Fall gewesen wäre (vgl. Aslanidis/Rovira-Kaltwasser 2016, S. 1081). Der starke Fokus auf und die Stärkung von Referenden seitens der Koalition und auf Kosten der griechischen Judikativen und Legislativen kann ebenso als Umsetzung des Volkszentrismus gesehen werden (vgl. Grigoriadis 2020, S. 12).
@@ -270,42 +273,55 @@ Während SYRIZA vor allem ökonomisch und politisch eine Unterdrückung des grie
 Ebenso konnte die Forschung darüber hinaus vor allem für SYRIZA starke Tendenzen in Richtung Anti-Elitismus feststellen (vgl. Stavrakakis 2015, S. 277), womit hier auch mit Recht von einem manichäischen Weltbild im Sinne des ideellen Ansatzes die Rede sein kann.
 
 
-### Gemeinsamkeit II: emotionaler Politikstil und Zuschnitt auf Parteiführung
+### Gemeinsamkeit II: Zuschnitt auf Parteiführung und emotionaler Politikstil
 
 + Grigoriadis 2020, S. 12 (Fußnote 18)
 
 + Stavrakakis 2015
 
-Auch bezüglich des Politikstils der beiden Parteien konnte eine gewisse Ähnlichkeit empirisch in den POPPA-Daten nachgewiesen werden. So 
+Auch bezüglich des Politikstils der beiden Parteien konnte eine gewisse Ähnlichkeit empirisch in den POPPA-Daten nachgewiesen werden. So ist zunächst für beide Parteien anhand von Abbildung 8 sichtbar, dass sie stark auf eine Führungspersönlichkeit zugeschnitten sind - im Fall von SYRIZA ist dies Alexis Tsipras, bei ANEL Panos Kammenos.
+Weiterhin wird deutlich, dass der politische Stil beider Parteien stark von Emotionalisierung, bzw. dem Hervorrufen verschiedener Emotionen beim Wähler, gekennzeichnet ist (Abbildung 7). Dies stimmt erneut mit den Erläuterungen aus dem Theorieteil überein: wie bereits dort erwähnt, ist das Framing von Einstellungen von Seiten populistischer Akteure enorm wichtig, um Wahlerfolge zu erzielen - und der Rückgriff auf einen emotionalisierten Politikstil passt hervorragend auf die Charakterisierung von SYRIZA und ANEL.
+
+Das Argument der starken, charismatisch-emotionalisierenden Führungsfigur passt hier sowohl auf Alexis Tsipras, als auch auf Panos Kammenos. Beide wurden auch in der politikwissenschaftlichen und diskurstheoretischen Forschung auf ihren Politikstil hin untersucht.
+Für Panos Kammenos kann dabei konstatiert werden, dass er besonders auch unter Rückgriff auf Verschwörungstheorien und unbewiesene Dokumente versucht, die Stimmung der Wählerschaft zu beeinflussen und - im Stile des anti-elitistischen Populisten - die vormals etablierten Parteien, welche jene repräsentieren, zu diskreditieren. Beispielsweise stellte er hierzu Behauptungen über zahlreiche Korruptions- und Vertuschungsfälle auf (vgl. Pappas/Aslanidis 2015, S. 192) oder artikulierte offen anti-semitische Standpunkte (vgl. Zafiropoulos 2015).
+
+Dem gegenüber kann auch Alexis Tsipras als ein charismatischer Parteiführer charakterisiert werden - jedoch auf eine andere Art und Weise. In seinem Fall waren es weniger weder der ethnische oder nationale Diskurs, welchen er für sich und seine Partei instrumentalisierte, noch anti-elitistische Verschwörungstheorien. Vielmehr griff er stark auf den bereits diskutierten Aspekt der Verbundenheit mit dem Volk und dessen Willen zurück, was seinen Ausdruck beispielsweise im Vorschlag und Anstreben einer Verfassungsreform fand, welche für mehr direkte Demokratie sorgen sollte (vgl. Grigoriadis 2020, S. 11-12). Doch wie bei Gemeinsamkeit I schon angesprochen, äußerte sich sein emotionalisierender Politikstil auch stark durch seine Rhetorik, durch welche er sich als für das Volk nach Kräften gegen die Austeritätspolitik der EU kämpfend inszenieren konnte (vgl. Stavrakakis 2015, S. 278). Und wie auch aus Medienberichten ersichtlich wird, scheint diese Taktik, gerade zu Beginn der SYRIZA-ANEL-Regierung, nicht gänzlich ohne Effekt geblieben zu sein (vgl. Kakissis 2015). Dass Tsipras dann zu einem späteren Zeitpunkt, wie bereits im Bereich der Vorgeschichte angesprochen, das Ergebnis des Referendums zum dritten EU-Griechenland-Memorandum bei seiner politischen Entscheidung nicht berücksichtigte, schwächte die "Tsipras-Euphorie" jedoch ab (vgl. Tsatsanis/Teperoglou 2016, S. 440-441).
 
 ### Gemeinsamkeit: Position zur EU ("Eurozone without austerity"), neue Konfliktlinie I
 
-+ vgl. Mudde 2016, S. 26
-+ vgl. Rori 2016, S. 1331
+<!-- + vgl. Mudde 2016, S. 26 -->
+<!--   + ANEL einzige Partei, die die Utopie-Position Eurozone without austerity mitgeht für SYRIZA -->
+<!-- + vgl. Rori 2016, S. 1331 Konfliktlinie -->
+<!-- + Pappas (Feb 2015, Opendemocracy) -->
 
-Ein weiterer Punkt, bei dem die Positionen der beiden Parteien sehr nah beieinander liegen und welcher darüber hinaus auch in der Forschung vielerorts als der *"Kleber"* der SYRIZA-ANEL-Koalition gesehen wurde, ist die Position beider Parteien in Bezug auf die EU.
+Ein weiterer Punkt, bei dem die Positionen der beiden Parteien sehr nah beieinander liegen und welcher darüber hinaus auch in der Forschung vielerorts als der *"Kleber"*, der die SYRIZA-ANEL-Koalition zusammenbrachte und -hielt, gesehen wurde, ist die Position beider Parteien in Bezug auf die EU. Besonders hier wird deutlich, worauf die Koalition der beiden Parteien miteinander wirklich beruhte. Auch beim Blick in die graphische Analyse der Daten der POPPA Expert Survey bestätigt sich dieses Bild (Abbildung 11): weder bei ANEL, noch bei SYRIZA handelt es sich um EU-Enthusiasten, sie stehen der Union vielmehr mit stark gemischten Gefühlen gegenüber. Zudem ist dies auch der parteiideologische Punkt, bei dem die beiden Parteien direkt nebeneinander liegen.
+
+Auch von Takis Pappas wird der Umstand der Formation einer SYRIZA-ANEL-Regierung stark auf deren EU-Position zurückgeführt. Er weist dabei darauf hin, dass die beiden Parteien zwar auch große Ähnlichkeiten bezüglich der Art des von ihnen geführten politischen Diskurses abseits des vorherrschenden Links-Rechts-Schemas haben (so zum Beispiel in der Darstellung von deren Politik als Kampf gegen Unterdrückung des Volkes durch die Elite im Land (ANEL) oder der EU (SYRIZA), vgl. Pappas/Aslanidis 2015, S. 192-195). So führt er an, dass sich neue Konfliktlinien abseits dessen gebildet hätten und ein Parteiensystem wie das in Griechenland zum damaligen Zeitpunkt weniger allein in dem bekannten Schema der Links-Rechts-Einordnung beurteilt werden sollte, sondern nach der von ihm vorgeschlagenen politisch-ideologischen Verortung der Parteien. So ergäbe sich eine Aufteilung in liberale, populistische und undemokratische Parteien - jede Dimension zusätzlich mit Optionen auf der politisch linken bzw. rechten Seite. In diesem Licht bringt er auch die starke Gemeinsamkeit der damaligen Koalition bezüglich der Position gegenüber der EU zur Sprache, welche eher gemischten Gefühlen entspräche. Eine derartige Kongruenz bei dieser Position hätte sich, so Pappas, für SYRIZA mit keiner anderen Partei im damaligen griechischen Parteienspektrum finden lassen (vgl. Pappas 2015a) - was diesen Punkt auch zu einer essenziellen Gemeinsamkeit macht, welche zur Formierung und zum Funktionieren einer ideologisch eigentlich so heterogenen Koalition wie der zwischen SYRIZA und ANEL notwendig war. Weiterhin sei hier auch auf Abbildung 14 hingewiesen, welche die Argumentation von Pappas graphisch neben der vom Autor vorliegender Arbeit selbst erstellten Abbildung 13 stützt.
+
+Argumentativ in die gleiche Kerbe schlägt auch Rori, die anführt, dass sich im Zuge der Finanzkrise die bereits angesprochenen neuen Gräben im Parteiensystem aufgetan hätten. Demnach wäre auch hier die Links-Rechts-Verortung allein nicht mehr so aussagekräftig. Diese sei zwar in kultureller Hinsicht die relevante Achse, jedoch hätte sich hier ökonomisch ein weiterer Graben aufgetan, welcher sich hauptsächlich im Hinblick auf Positionen zu Europa strukturierte und für die Akteure eine große Wichtigkeit aufwies und übernimmt hier einen Standpunkt, der bereits auch in der Forschung an anderer Stelle so für den griechischen Fall erarbeitet wurde (vgl. Katsanidou/Otjes 2015). 
+Rori argumentiert weiter, dass es sich bei der Koalition zwischen SYRIZA und ANEL also aus ihrer Sicht weniger um ein programmatisches Abkommen einer Regierung handelt, welches logischerweise ideologische Nähe bräuchte. Vielmehr sei der entscheidende Punkt bei der Zusammenarbeit, der auch das Ausblenden der sozio-kulturellen Differenzen ermöglichte, der des Widerstandes gegen das Memorandum und die Austeritätspolitik der EU gewesen (vgl. Rori 2016, S. 1331). 
 
 
 ## Unterschiede und spaltende Elemente
 
------------------------------
+<!-- ----------------------------- -->
 
-+ Klar: die *ideologische Spaltung* in rechts und links
+<!-- + Klar: die *ideologische Spaltung* in rechts und links -->
 
-+ Vor allem die Themen *Migration* und *Nativismus*
-  + Hier ist SYRIZA eher locker bzw. integrativ, während ANEL bei diesen beiden die höchsten Werte der griechischen Parteien aufweist (wenn man die rechtsextremistische XR rauslässt)
-  + Das hat auch Sprengpotential bewiesen, gerade Nativismus --> Mazedonien-Frage
-  
-+ Auch: Unterschiede bei *sozialen/gesellschaftlichen Leitbildern*
-  + Lebensstil: traditionelle ANEL vs. liberale SYRIZA
-  + Autoritarismus bei ANEL vs. Liberalismus von SYRIZA, wenn es um bürgerliche Freiheiten geht
+<!-- + Vor allem die Themen *Migration* und *Nativismus* -->
+<!--   + Hier ist SYRIZA eher locker bzw. integrativ, während ANEL bei diesen beiden die höchsten Werte der griechischen Parteien aufweist (wenn man die rechtsextremistische XR rauslässt) -->
+<!--   + Das hat auch Sprengpotential bewiesen, gerade Nativismus --> Mazedonien-Frage -->
 
-+ *Innerparteilicher Aufbau* ist anders (da ist fraglich, ob das wichtig ist)
-  + Parteiinterne Basisdemokratie, wie stark ist die Basis eingebunden? --> das ist bei SYRIZA logisch eher der Fall
-  + Personalisierungsgrad der Führung: bei ANEL sowieso sehr stark, bei SYRIZA auch, aber nicht in dem Umfang
-    + Generell ist dieser Punkt in Griechenland wohl sehr stark (Wertebereich fängt schon bei 5 an --> hier Diagramm umstellen, wenn beinhaltet werden soll)
+<!-- + Auch: Unterschiede bei *sozialen/gesellschaftlichen Leitbildern* -->
+<!--   + Lebensstil: traditionelle ANEL vs. liberale SYRIZA -->
+<!--   + Autoritarismus bei ANEL vs. Liberalismus von SYRIZA, wenn es um bürgerliche Freiheiten geht -->
 
------------------------------
+<!-- + *Innerparteilicher Aufbau* ist anders (da ist fraglich, ob das wichtig ist) -->
+<!--   + Parteiinterne Basisdemokratie, wie stark ist die Basis eingebunden? --> das ist bei SYRIZA logisch eher der Fall -->
+<!--   + Personalisierungsgrad der Führung: bei ANEL sowieso sehr stark, bei SYRIZA auch, aber nicht in dem Umfang -->
+<!--     + Generell ist dieser Punkt in Griechenland wohl sehr stark (Wertebereich fängt schon bei 5 an --> hier Diagramm umstellen, wenn beinhaltet werden soll) -->
+
+<!-- ----------------------------- -->
 
 Nachdem nun zuerst auf die Gemeinsamkeiten zwischen SYRIZA und ANEL eingegangen wurde und hier vor allem jene in Bezug auf deren Bild von Volkssouveränität und Anti-Elitismus, die starke Gemeinsamkeit bezüglich der kritischen Position gegenüber der EU und dem Euro, sowie der ähnliche politische Stil herausgestellt wurden, wird sich nun genauer mit den Unterschieden beschäftigt werden.
 
@@ -319,11 +335,11 @@ Insgesamt muss für diese beiden Variablen jedoch auch konstatiert werden, dass 
 
 ### Unterschied II: Parteienideologie - Nativismus - Migration: wer oder was ist das Volk? (Neue Konfliktlinie II)
 
-+ Unterstützend auch die Ergebnisse bzgl. idealisiertes Gesellschaftsbild (lifestyle und laworder)
-+ Pappas u. Aslanidis 2015, S. 192ff.
-+ Rori 2016, S. 1331
-+ Stavrakakis, Andreadis, Katsambekis 2017, S. 451
-  + warum die goldene morgenröte keine populistische partei ist, sondern aggressiv (450)
+<!-- + Unterstützend auch die Ergebnisse bzgl. idealisiertes Gesellschaftsbild (lifestyle und laworder) -->
+<!-- + Pappas u. Aslanidis 2015, S. 192ff. -->
+<!-- + Rori 2016, S. 1331 -->
+<!-- + Stavrakakis, Andreadis, Katsambekis 2017, S. 451 -->
+<!--   + warum die goldene morgenröte keine populistische partei ist, sondern aggressiv (450) -->
 
 Ein weiterer Unterschied, der in der Betrachtung des Verhältnisses der beiden Parteien in jedem Fall angesprochen werden muss, ist im Bereich der Ideologie der jeweiligen Parteien angesiedelt. Beim Blick in die Graphiken zu den Themen **Migration** und **Nativismus** (Abbildungen 9 und 10) fällt auf, dass sich die beiden hier diametral gegenüberstehen: SYRIZA nimmt die liberalste Position aller Parteien im System ein, während ANEL die am wenigsten liberale besetzt (erneut unter Nichtbeachtung der Goldenen Morgenröte (XA)). Hier kommt die ideologische Distanz auf der Links-Rechts-Achse voll zum Tragen - es handelt sich um einen eindeutig spaltenden Faktor innerhalb der Koalition.
 
@@ -332,15 +348,13 @@ Sowohl SYRIZA, als auch ANEL, welche ja noch immer Koalitionspartner waren, stim
 
 Zieht man zu diesen Beobachtungen ebenso jene hinzu, welche thematisch in etwa das gesellschaftliche Idealbild der jeweiligen Parteien verkörpern (Abbildungen 12 und 13), so offenbaren sich auch hier diametral gegenüberstehende Vor- und Einstellungen. Blickt man auf die Abstimmungen über die Gesetze zurück, so lässt sich leicht eine Erklärung für die jeweiligen Parteipositionen in deren Ideologien und Selbstverständissen finden. Die Einschätzung der POPPA Expert Survey im Bereich "Idealer Lebensstil lt. Partei" bestätigt die bisherige Forschung: SYRIZA ist, wie bereits zuvor erwähnt, eher inklusiv und progressiv, während ANEL in diesen Bereichen traditionellere Positionen einnimmt, so zum Beispiel der orthodoxen Kirche nahesteht (vgl. Pappas/Aslanidis 2015, S. 451), oder aber auch homophobe Ansichten offenbart (vgl. Rori 2016, S. 1328).
 
-
-
-
-
 # Fazit und Schlussbemerkungen
 
 + Zusammenfassend: Was trennt - was eint populistische Parteien an der Regierung?
 
 + Anschließend an Stavrakakis, Andreadis, Katsambekis 2017 --> was Parteien in ihrem realen Abstimmungsverhalten im Alltag einer solchen Koalition beeinflusst, das ist nicht unbedingt deren gemeinsamer Background im Populismus - sondern ihre ideologisch-politische Verpflichtung bzw. Position
+
++ Anschließend an Pappas (Feb 15, Opendemocracy): SYRIZA und ANEL waren lt. ihm gar die einzig mögliche Koalition, wegen der starken Fragmentierung des grc. Parteiensystem (vgl. seine Graphik)
 
 + Was kann noch gemacht werden in dem Bereich?
 
@@ -361,7 +375,9 @@ Zusammenfassend lässt sich konstatieren, dass es innerhalb der sehr heterogenen
 
 + Pappas, Takis; Aslanidis, Paris (2015): *Greek Populism: A Political Drama in Five Acts*, in: Kriesi, Hanspeter; Pappas, Takis (Hrsg.): *European Populism in the Shadow of the Great Recession*, ECPR Press, Colchester.
 
-+ Pappas, Takis (2015): *Populist Hegemony*, Open Democracy, Artikel vom 25.09., abgerufen unter: https://www.opendemocracy.net/en/can-europe-make-it/populist-hegemony-in-greece/ (Stand: 30.03.2021).
++ Pappas, Takis (2015): *Populist Hegemony*, Artikel via Open Democracy vom 25.09., abgerufen unter: https://www.opendemocracy.net/en/can-europe-make-it/populist-hegemony-in-greece/ (Stand: 30.03.2021).
+
++ Pappas, Takis (2015a): *Not so strange bedfellows: making sense of the coalition between Syriza and the Independent Greeks*, Artikel via Open Democracy vom 03.02., abgerufen unter: https://www.opendemocracy.net/en/can-europe-make-it/not-so-strange-bedfellows-making-sense-of-coalition-between-syriza/ (Stand: 31.03.2021).
 
 + Rori, Lamprini (2016): *The 2015 Greek parliamentary elections: from great expectations to no expectations*, West European Politics, 39:6, S. 1323-1343.
 
@@ -388,7 +404,9 @@ Zusammenfassend lässt sich konstatieren, dass es innerhalb der sehr heterogenen
 
 + Otjes, Simon; Louwerse, Tom (2013): *Populists in Parliament: Comparing Left-Wing and Right-Wing Populism in the Netherlands*, Political Studies, 63:1 (2015), S. 60-79.
 
++ Zafiropoulos, Pavlos (2015): *Who is Panos Kammenos?*, Artikel via thetoc.gr vom 25.01.2015, abgerufen unter: https://www.thetoc.gr/eng/politics/article/who-is-panos-kammenos (Stand: 31.03.2021).
 
++ Kakissis, Joanna (2015): *Tsipras' strategy gives Greeks a voice*, Artikel via DW vom 09.02.2015, abgerufen unter: http://www.dw.de/tsipras-strategy-gives-greeks-a-voice/a-18244014 (Stand: 31.03.2021).
 
 
 
@@ -613,6 +631,11 @@ ggplot(data = poppa_GRC, aes(x = lifestyle, y = party)) +
        y = "Partei") +
   scale_x_binned(limits = c(0, 10), n.breaks = 10, nice.breaks = T)
 ```
+
+### T. Pappas: Griechenlands gespaltenes Parteiensystem
+
+![Abbildung 14: Drei Parteitypen im griechischen Parteiensystem 2015, nach T. Pappas 2015a](/Users/flo/Desktop/politische soziologie/pictures/greekpartysystemPappas.png)
+
 
 # Eigenständigkeitserklärung
 
