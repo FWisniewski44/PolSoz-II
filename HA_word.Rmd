@@ -223,6 +223,7 @@ Dies stimmt mit dem Forschungsdiskurs zu beiden Parteien als populistische über
 
 # SYRIZA und ANEL: Analyse der Gemeinsamkeiten und Unterschiede
 
+<!--
 -----------------------------
 
 + *Politischer Stil*
@@ -236,7 +237,7 @@ Dies stimmt mit dem Forschungsdiskurs zu beiden Parteien als populistische über
   + gemeinsamer Kampf gegen Memoranden und die Troika (Ebd.)
 
 <!-- + *Ökonomische Positionen?* -->
-<!--   + auffällig, dass zwar links und rechts angesiedelt, aber hier doch einige Überschneidungen -->
+<!--   + auffällig, dass zwar links und rechts angesiedelt, aber hier doch einige Überschneidungen
   
 + manichean, peoplecentrism, antielitism
 
@@ -244,6 +245,7 @@ Dies stimmt mit dem Forschungsdiskurs zu beiden Parteien als populistische über
 
 
 -----------------------------
+-->
 
 Hierbei wird folgendermaßen vorgegangen werden: es werden anhand der in der POPPA Expert Survey vorhandenen und für den vorliegenden Fall relevanten Variablen die Positionen von SYRIZA und ANEL gegenübergestellt, jedoch ebenso auch insgesamt im griechischen Parteiensystem gezeigt werden.
 Anhand der durchschnittlichen Einschätzung der Experten aus der Umfrage und ausgewählter Forschungsarbeiten soll daraufhin ein deutlicheres Bild gezeichnet werden, wo Spaltungen oder Gemeinsamkeiten bei den beiden Parteien und deren Positionen vorliegen, um die Zusammenarbeit ideologisch heterogener Koalitionen von diesem Standpunkt aus besser verstehen und beurteilen zu können.
